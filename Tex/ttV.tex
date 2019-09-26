@@ -71,9 +71,10 @@ The acceptance factors for events passing inclusive selection (i.e. $\geq$1$N_{b
 
 The nominal  \textsc{Sherpa} \ttW  sample is compared to its radiation uncertainty variations and alternative generator.
 The ratio plot shows the ratio of the alternative MC sample and scale variation to the nominal sample, where the colour scheme is given in the legend.
-%Discrepancies between PP8 $\mathrm{t\bar{t}}$ and the alternative generators can be seen in the $\Delta R$ quantities, as in Figures~\ref{ttbb:avedR}\&\ref{ttbb:mindR}, where at least in the 4b selection the difference to the alternative generators is larger than the uncertainty band given by the radiation variations.  
+%Discrepancies between PP8 $\mathrm{t\bar{t}}$ and the alternative generators can be seen in the $\Delta R$ quantities\&\ref{ttbb:mindR}, where at least in the 4b selection the difference to the alternative generators is larger than the uncertainty band given by the radiation variations.  
 %Interesting differences are also observed in the HT distributions, particularly in the 3b selection, as illustrated in Figures~\ref{ttbb:HTbjets}\&\ref{ttbb:HTljets}. The jet multiplicity, as in Figure~\ref{ttbb:Njets}, has poor agreement among the generators for large jet multiplicities.
 
+Significant discrepancies in the modelling of jet kinematics can be seen between \textsc{Sherpa} \ttW and \textsc{MadGraph5\_aMC@NLO} generators in 1$N_{b-jets}$ selections, while in $\geq2$$N_{b-jets}$ the difference is reduced, as illustrated in Figures~\ref{ttV:4j12b} and~\ref{ttV:3j12b}
 
 \begin{figure}[!htb]
 \centering
@@ -81,7 +82,40 @@ The ratio plot shows the ratio of the alternative MC sample and scale variation 
 \includegraphics[width=0.45\textwidth]{Plots/ttV/c_Region_1_nJets}\\
 \includegraphics[width=0.45\textwidth]{Plots/ttV/c_Region_0_HT_jets}
 \includegraphics[width=0.45\textwidth]{Plots/ttV/c_Region_1_HT_jets}\\
-  \caption{Distribution of the jet multiplicities (top) and the sum of jets transverse momentum, $HT^{\text{jets}}$ (bottom), for the 1$b$-jet(left) and 4$b$-jet (right) selection requiring four and more jets. \label{ttbb:avedR}}
+  \caption{Distribution of the jet multiplicities (top) and the sum of jets transverse momentum, $HT^{\text{jets}}$ (bottom), for the 1$b$-jet(left) and 4$b$-jet (right) selection requiring four and more jets. \label{ttV:4j12b}}
 \end{figure}
+
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.45\textwidth]{Plots/ttV/c_Region_2_HT_jets}
+\includegraphics[width=0.45\textwidth]{Plots/ttV/c_Region_3_HT_jets}\\
+  \caption{Distribution of the sum of jets transverse momentum, $HT^{\text{jets}}$, for the 1$b$-jet(left) and 4$b$-jet (right) selection requiring three jets. \label{ttV:3j12b}}
+\end{figure}
+
+Good agreement of the single lepton kinematics can be seen between nominal and alternative generators, as presented in Figures~\ref{ttV:lep_kin}.
+While significant difference in shapes observed for the distributions  correlations between two leptons, as illustrated in Figures~\ref{ttV:ll_kin}. Distributions are presented for $\geq2N_{b-jets},\geq4N_{jets}$ region, while similar behaviour seen in all other regions as well.
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.45\textwidth]{Plots/ttV/c_Region_1_lep_Pt_0}
+%\includegraphics[width=0.45\textwidth]{Plots/ttV/c_Region_1_lep_Pt_1}
+\includegraphics[width=0.45\textwidth]{Plots/ttV/c_Region_1_min_DRl0j}\\
+  \caption{Distribution of the leading lepton transverse momentum (left) and the minimum angular separation between the leading lepton and the nearest jet (right).
+  \label{ttV:lep_kin}}
+\end{figure}
+
+\begin{figure}[!htb]
+\centering
+	% \hspace{25mm} $DRl_0l_1$  \hspace{20mm} $max|\eta^{\ell\ell}|$\\
+\includegraphics[width=0.45\textwidth]{Plots/ttV/c_Region_1_DRll01}
+\includegraphics[width=0.45\textwidth]{Plots/ttV/c_Region_1_maxEta_ll} 
+%\includegraphics[width=0.45\textwidth]{Plots/ttV/c_Region_1_lep_dPhi} 
+  \caption{Distribution of the angular distance between the two same-sign lepton (left) and  maximum between lepton $|\eta_{\ell 0}|$ and $|\eta_{\ell 1}|$(right).
+   \label{ttV:ll_kin}}
+\end{figure}
+% 
+
+
 
 
