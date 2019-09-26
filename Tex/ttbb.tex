@@ -1,2 +1,23 @@
 \section{ttbb}
 \label{sec:ttbb}
+
+\subsection{Samples}
+Four MC generators compared in this study, where the inclusive $\mathrm{t\bar{t}}$ PP8 sample represents the nominal sample in the ttH analysis. It is generated with the POWHEG-BOX v2 NLO event generator[57-60] with NNPDF3.0 NLO PDF[5 ttbb] set, matched to Pythia8 and is referred to as PP8 $\mathrm{t\bar{t}}$, where the additional bb-pair is described by the parton shower. The $h_{damp}$ parameter was set to 1.5 times the top quark mass[61], which is assumed to be 172.5 GeV. The parton shower and the hadronisation were modelled by Pythia 8.210 with the A14 set of tuned parameters. The renormalisation and factorisation scales were set to the transverse mass of the top quark.
+The intrinsic uncertainty of the nominal PP8 $\mathrm{t\bar{t}}$ sample is expressed by the simultaneous variation of the renormalisation and factorisation scales together with the PDF tune parameter. The RadiationUp variation has the renormalisation and factorisation scales decreased by a factor of two, the Var3c upward variation of the A14 parameter set and the $h_{damp}$ parameter doubled. The RadiationDown variation has the renormalisation and factorisation scales increased by a factor of two, the Var3c downward variation and the nominal value of $h_{damp}$.
+
+The PP8 tt+bb sample also uses the POWHEG generator where $t\bar{t}b\bar{b}$ matrix elements are calculated at NLO with massive b-quarks, using the four-flavour NLO NNPDF3.0 PDF set.
+
+For the PP8 samples the bottom and charm quark decays are described by EVTGEN v1.2[50 ttbb] and the top quark spin correlations follow reference[51ttbb].
+
+The Sherpa tt+bb sample describes NLO tt+bb including parton showering and hadronisation by SHERPA-OPENLOOPS[67-69]. The sample was produced with Sherpa version 2.1.1 and the CT10 four-flavour scheme PDF set[70,71]. The renormalisation scale is set to the CMMPS value as in [67], the factorisation and resummation scales equal $\mathrm{H_T/2}$.
+
+Both the PP8 tt+bb and the Shpera tt+bb samples describe the additional bb-pair with NLO precision in QCD, taking into account the b-quark mass
+
+The Sherpa $\mathrm{t\bar{t}}$ sample uses Sherpa version 2.2.1[40ttbb] with the ME+PS@NLO (multi-leg) setup usingthe MEPS@NLO prescription[41ttbb], interfaced with OPENLOOPS. It provides NLO accuracy for up to one additional parton and LO accuracy for up to four additinoal partons. The NNPDF3.0NNLO PDF set is used with a five-flavour scheme and both renormalisation and factorisation sclaes are set to $\sqrt{0.5\times(m_{T,t}^2+m_{T,\bar{t}}^2)}$. 
+
+
+\subsection{Fiducial Volume}
+Object and event selection is defined at particle-level that closely match the detector-level described in reference~\cite{HIGG-2017-03}. Jets are reconstructed from stable particles with a mean lifetime of $\tau > 3\times 10^{-11}$~s, using the anti-$k_t$ algorithm with a radius parameter of $R=0.4$, and are required to have $\mathrm{p_{T}>15 GeV}$ and $|\eta|< 2.5$. Jets are matched to b-hadrons with $\mathrm{p_{T}>15 GeV}$ by ghost matching~\cite{70ttbb} and are referred to as b-jets. Electrons and muons, referred to as leptons, are required to satisfy $\mathrm{p_{T}>27 GeV}$. Selected electrons and muons are required to be separate from selected jets by $\Delta R>0.4$. Events are selected with exactly one lepton, targeting the semi-leptonic $\mathrm{t\bar{t}}$ decay.
+Two regions are considered, defined by 5 jets \& 3 b-jets or >=6jets \& >=4 b-jets.
+
+\subsection{Results}
