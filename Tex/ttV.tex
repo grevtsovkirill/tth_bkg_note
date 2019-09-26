@@ -63,11 +63,25 @@ Five regions are defined in total, categorized by the number of jets (three or  
 %The event selection requirements are summarized in Table~\ref{}.
 %defined by 5 jets \& 3 b-jets or >=6jets \& >=4 b-jets.
 
+Events in fiducial volume are scaled to the total number of generated events. 
+The acceptance factors for events passing inclusive selection (i.e. $\geq$1$N_{b-jets}$, $\geq$3 $N_{jets}$, before further split to five regions defined above) are: $A_X^{\geq1b\geq3j}=1.79\times10^{-2}$ and 1.90$\times10^{-2}$ for \textsc{Sherpa} and \textsc{MadGraph5\_aMC@NLO} correspondingly.
+
+
 \subsection{Results}
-The nominal  \textsc{Sherpa} \ttW  sample is compared to its radiation uncertainty variations and alternative generator, scaled to a common arbitrary integrated luminosity.
+
+The nominal  \textsc{Sherpa} \ttW  sample is compared to its radiation uncertainty variations and alternative generator.
 The ratio plot shows the ratio of the alternative MC sample and scale variation to the nominal sample, where the colour scheme is given in the legend.
 %Discrepancies between PP8 $\mathrm{t\bar{t}}$ and the alternative generators can be seen in the $\Delta R$ quantities, as in Figures~\ref{ttbb:avedR}\&\ref{ttbb:mindR}, where at least in the 4b selection the difference to the alternative generators is larger than the uncertainty band given by the radiation variations.  
 %Interesting differences are also observed in the HT distributions, particularly in the 3b selection, as illustrated in Figures~\ref{ttbb:HTbjets}\&\ref{ttbb:HTljets}. The jet multiplicity, as in Figure~\ref{ttbb:Njets}, has poor agreement among the generators for large jet multiplicities.
 
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.45\textwidth]{Plots/ttV/c_Region_0_nJets}
+\includegraphics[width=0.45\textwidth]{Plots/ttV/c_Region_1_nJets}\\
+\includegraphics[width=0.45\textwidth]{Plots/ttV/c_Region_0_HT_jets}
+\includegraphics[width=0.45\textwidth]{Plots/ttV/c_Region_1_HT_jets}\\
+  \caption{Distribution of the jet multiplicities (top) and the sum of jets transverse momentum, $HT^{\text{jets}}$ (bottom), for the 1$b$-jet(left) and 4$b$-jet (right) selection requiring four and more jets. \label{ttbb:avedR}}
+\end{figure}
 
 
