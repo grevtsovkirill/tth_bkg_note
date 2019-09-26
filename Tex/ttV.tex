@@ -3,9 +3,16 @@
 
 
 \subsection{Samples}
-
-The simulated sample for \ttW production was generated using the \textsc{Sherpa}~2.2.1~\cite{sherpa} generator with the NNPDF3.0 NLO PDF set.
+Two MC generators compared in this study.
+The nominal sample for \ttW production was generated using the \textsc{Sherpa}~2.2.1~\cite{sherpa} generator with the NNPDF3.0 NLO PDF set.
 The matrix element (ME) was calculated for up to one additional parton at NLO and up to two partons at LO using
 \textsc{Comix}~\cite{Gleisberg:2008fv} and \textsc{OpenLoops}~\cite{Cascioli:2011va}, and merged with the \textsc{Sherpa} parton shower~\cite{Schumann:2007mg} using the \textsc{MePs@Nlo} prescription~\cite{Hoeche:2012yf}.
 The choice of renormalisation and factorisation scales is $\mu_R = \mu_F = H_\textrm{T}$/2, where $H_\textrm{T}$ is defined as the scalar sum of the transverse masses $\sqrt{p_\textrm{T}^2+m^2}$ of all final state particles.
+
+
+
+Systematic uncertainties due to missing higher-order QCD corrections are estimated by varying the factorisation and renormalisation scales in the nominal sample simultaneously by a factor of 0.5 and 2.0 with respect to the central value. 
+Uncertainties associated with the modelling of additional QCD radiation are estimated by comparing the nominal \ttW prediction with that of an alternative sample that was generated at NLO (thus at lower order than for the nominal sample) with the \textsc{MadGraph5\_aMC@NLO}~2.2.1 generator using the same scale choice and PDF set as for the nominal sample, and interfaced to \textsc{Pythia}~8.2 in combination with the A14 tune. 
+
+% Finally, the uncertainty due to the choice of PDF set is evaluated using the PDF4LHC15 prescription.
 
