@@ -1,2 +1,66 @@
 \section{ttbb}
 \label{sec:ttbb}
+
+\subsection{Samples}
+Four MC generators compared in this study, where the inclusive $\mathrm{t\bar{t}}$ PP8 sample represents the nominal sample in the ttH analysis. It is generated with the POWHEG-BOX v2 NLO event generator~\cite{Nason:2004rx,Frixione:2007vw,Alioli:2010xd,Campbell:2014kua} with NNPDF3.0 NLO PDF set, matched to Pythia8 and is referred to as PP8 $\mathrm{t\bar{t}}$, where the additional bb-pair is described by the parton shower. The $h_{damp}$ parameter was set to 1.5 times the top quark mass~\cite{ATL-PHYS-PUB-2016-020}, which is assumed to be 172.5 GeV. The parton shower and the hadronisation were modelled by Pythia 8.210 with the A14 set of tuned parameters. The renormalisation and factorisation scales were set to the transverse mass of the top quark.
+The intrinsic uncertainty of the nominal PP8 $\mathrm{t\bar{t}}$ sample is expressed by the simultaneous variation of the renormalisation and factorisation scales together with the PDF tune parameter. The RadiationUp variation has the renormalisation and factorisation scales decreased by a factor of two, the Var3c upward variation of the A14 parameter set and the $h_{damp}$ parameter doubled. The RadiationDown variation has the renormalisation and factorisation scales increased by a factor of two, the Var3c downward variation and the nominal value of $h_{damp}$.
+
+The PP8 tt+bb sample also uses the POWHEG generator where $t\bar{t}b\bar{b}$ matrix elements are calculated at NLO with massive b-quarks, using the four-flavour NLO NNPDF3.0 PDF set~\cite{Jezo:2018yaf}.
+
+For the PP8 samples the bottom and charm quark decays are described by EVTGEN v1.2~\cite{LANGE2001152} and the top quark spin correlations follow reference~\cite{Frixione:2007zp}.
+
+The Sherpa tt+bb sample describes NLO tt+bb including parton showering and hadronisation by SHERPA-OPENLOOPS~\cite{Cascioli:2013era,Gleisberg:2008ta,Cascioli:2011va}. The sample was produced with Sherpa version 2.1.1 and the CT10 four-flavour scheme PDF set~\cite{Guzzi:2011sv,Gao:2013xoa} The renormalisation scale is set to the CMMPS value as in ref~\cite{Cascioli:2013era}, the factorisation and resummation scales equal $\mathrm{H_T/2}$.
+
+Both the PP8 tt+bb and the Shpera tt+bb samples describe the additional bb-pair with NLO precision in QCD, taking into account the b-quark mass
+
+The Sherpa $\mathrm{t\bar{t}}$ sample uses Sherpa version 2.2.1~\cite{Gleisberg:2008ta} with the ME+PS@NLO (multi-leg) setup using the MEPS@NLO prescription~\cite{Hoeche:2012yf}, interfaced with OPENLOOPS. It provides NLO accuracy for up to one additional parton and LO accuracy for up to four additional partons. The NNPDF3.0NNLO PDF set is used with a five-flavour scheme and both renormalisation and factorisation scales are set to $\sqrt{0.5\times(m_{T,t}^2+m_{T,\bar{t}}^2)}$. 
+
+
+\subsection{Fiducial Volume}
+Object and event selection is defined at particle-level that closely match the detector-level described in reference~\cite{HIGG-2017-03}. Jets are reconstructed from stable particles with a mean lifetime of $\tau > 3\times 10^{-11}$~s, using the anti-$k_t$ algorithm with a radius parameter of $R=0.4$, and are required to have $\mathrm{p_{T}>15 GeV}$ and $|\eta|< 2.5$. Jets are matched to b-hadrons with $\mathrm{p_{T}>15 GeV}$ by ghost matching~\cite{70ttbb} and are referred to as b-jets. Electrons and muons, referred to as leptons, are required to satisfy $\mathrm{p_{T}>27 GeV}$. Selected electrons and muons are required to be separate from selected jets by $\Delta R>0.4$. Events are selected with exactly one lepton and at least 4 jets, targeting the semi-leptonic $\mathrm{t\bar{t}}$ decay.
+Two regions are considered, defined by 3 b-jets or >=4 b-jets.
+
+\subsection{Results}
+The nominal PP8 $\mathrm{t\bar{t}}$ sample is compared to its radiation uncertainty variations and alternative generators, scaled to a common arbitrary integrated luminosity.
+The first ratio plot shows the ratio of the different MC samples to PP8 $\mathrm{t\bar{t}}$, where the colour scheme is given in the legend.
+Discrepancies between PP8 $\mathrm{t\bar{t}}$ and the alternative generators can be seen in the $\Delta R$ quantities, as in Figures~\ref{ttbb:avedR}\&\ref{ttbb:mindR}, where at least in the 4b selection the difference to the alternative generators is larger than the uncertainty band given by the radiation variations.  
+Interesting differences are also observed in the HT distributions, particularly in the 3b selection, as illustrated in Figures~\ref{ttbb:HTbjets}\&\ref{ttbb:HTljets}. The jet multiplicity, as in Figure~\ref{ttbb:Njets}, has poor agreement among the generators for large jet multiplicities.
+
+The 2nd ratio plot shows the relative uncertainty of the radiation variations on the PP8 $\mathrm{t\bar{t}}$ sample (black) and the PP8 tt+bb sample, following the above description. It can be seen that the this type of uncertainties is larger for the tt+bb case than in the $\mathrm{t\bar{t}}$ calculation.
+Additionally, the up and down radiation uncertainty is calculated for the PP8 $\mathrm{t\bar{t}}$ sample following the CMS approach (red), under which the renormalisation scale, factorisation scale and PDF tune variations are each taken individually and their difference to the nominal is summed in quadrature. It can be seen that this underestimates the radiation uncertainty with respect to the simultaneous varaition.
+
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.35\textwidth]{Plots/ttbb/hisgenEvt_Dr_GenBJetsAverage_4j3t__div}
+\includegraphics[width=0.35\textwidth]{Plots/ttbb/hisgenEvt_Dr_GenBJetsAverage_4j4t__div}
+  \caption{Distribution of the average opening angle between two b-jets, for the 3b selection (left) and the 4b-jet selection (right). \label{ttbb:avedR}}
+\end{figure}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.35\textwidth]{Plots/ttbb/hisgenEvt_Dr_MinDeltaRGenBJets_4j3t__div}
+\includegraphics[width=0.35\textwidth]{Plots/ttbb/hisgenEvt_Dr_MinDeltaRGenBJets_4j4t__div}
+  \caption{Distribution of the smallest opening angle between two b-jets, for the 3b selection (left) and the 4b-jet selection (right). \label{ttbb:mindR}}
+\end{figure}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.35\textwidth]{Plots/ttbb/hisgenHTbjets_4j3t__div}
+\includegraphics[width=0.35\textwidth]{Plots/ttbb/hisgenHTbjets_4j4t__div}
+  \caption{Sum of b-jet transverse momenta, for the 3b selection (left) and the 4b-jet selection (right). \label{ttbb:HTbjets}}
+\end{figure}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.35\textwidth]{Plots/ttbb/hisgenHTljets_4j3t__div}
+\includegraphics[width=0.35\textwidth]{Plots/ttbb/hisgenHTljets_4j4t__div}
+  \caption{Sum of non-b-jet transverse momenta, for the 3b selection (left) and the 4b-jet selection (right). \label{ttbb:HTljets}}
+\end{figure}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.35\textwidth]{Plots/ttbb/hisgenNjets_4j3t__div}
+\includegraphics[width=0.35\textwidth]{Plots/ttbb/hisgenNjets_4j4t__div}
+  \caption{Jet multiplicity, for the 3b selection (left) and the 4b-jet selection (right). \label{ttbb:Njets}}
+\end{figure}
