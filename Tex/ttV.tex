@@ -3,7 +3,7 @@
 
 
 \subsection{Samples}
-Two MC generators compared in this study.
+Two MC generators are compared in this study.
 The nominal sample for \ttW production was generated using the \textsc{Sherpa}~2.2.1~\cite{sherpa} generator with the NNPDF3.0 NLO PDF set.
 The matrix element (ME) was calculated for up to one additional parton at NLO and up to two partons at LO using
 \textsc{Comix}~\cite{Gleisberg:2008fv} and \textsc{OpenLoops}~\cite{Cascioli:2011va}, and merged with the \textsc{Sherpa} parton shower~\cite{Schumann:2007mg} using the \textsc{MePs@Nlo} prescription~\cite{Hoeche:2012yf}.
@@ -12,8 +12,8 @@ The choice of renormalisation and factorisation scales is $\mu_R = \mu_F = H_\te
 
 
 Systematic uncertainties due to missing higher-order QCD corrections are estimated by varying the factorisation and renormalisation scales in the nominal sample simultaneously by a factor of 0.5 and 2.0 with respect to the central value. 
-Uncertainties associated with the modelling of additional QCD radiation are estimated by comparing the nominal \ttW prediction with that of an alternative sample that was generated at NLO (thus at lower order than for the nominal sample) with the \textsc{MadGraph5\_aMC@NLO}~2.2.1 generator using the same scale choice and PDF set as for the nominal sample, and interfaced to \textsc{Pythia}~8.2 in combination with the A14 tune. 
-The samples configurations are summarized in Table~\ref{tab:mcconfig}.
+Uncertainties associated with the modelling of additional QCD radiation are estimated by comparing the nominal \ttW prediction with that of an alternative sample that was generated at NLO with the \textsc{MadGraph5\_aMC@NLO}~2.2.1 generator using the same scale choice and PDF set as for the nominal sample, and interfaced to \textsc{Pythia}~8.2 in combination with the A14 tune. 
+The samples configurations are summarised in Table~\ref{tab:mcconfig}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}
 \begin{center}
@@ -39,42 +39,40 @@ $\ttbar W$  & \textsc{Sherpa 2.2.1} & \textsc{MePs@Nlo} & \textsc{Sherpa} &  NNP
 % Finally, the uncertainty due to the choice of PDF set is evaluated using the PDF4LHC15 prescription.
 
 \subsection{Fiducial Volume}
-Object and event selection is defined at particle-level that closely match the detector-level described in reference~\cite{HIGG-2017-02}. 
+Object and event selection is defined at particle-level that closely matches the detector-level described in reference~\cite{ATLAS-CONF-2019-045}. 
 Jets are reconstructed from stable particles with a mean lifetime of $\tau > 3\times 10^{-11}$~s, using the anti-$k_t$ algorithm with a radius parameter of $R=0.4$.
 Jets are required to satisfy $\pt > 25~\gev$ and $|\eta| < 2.5$.
-Jets are matched to $b$-hadrons with $\mathrm{p_{T}>25 GeV}$ by ghost matching~\cite{70ttbb} and are referred to as $b$-jets. 
-Electrons and muons, referred to as light leptons, are required to be separate from selected jets by $\Delta R>0.4$. 
+Jets are matched to $b$-hadrons with $\mathrm{p_{T}>5 GeV}$ by ghost matching~\cite{Cacciari:2008gn} and are referred to as $b$-jets. 
+Electrons and muons, referred to as light leptons, are required to be separated from selected jets by $\Delta R>0.4$. 
 Hadronically decaying $\tau$ leptons are required to satisfy $\pt > 25~\gev$ and $|\eta| < 2.5$.
 Events are selected with exactly two light leptons.
 Leptons are required to have $|\eta|< 2.5$ and $\mathrm{p_{T}>25(20) GeV}$ for leading (subleading) lepton. 
 Leptons are required to have same charge, targeting the semi-leptonic $\mathrm{t\bar{t}}$ decay and leptonic $W$ decay.
 
 %Events separated by Hadronic tau decays Hadronically decaying $\tau$ lepton
- 
-Five regions are defined in total, categorized by the number of jets (three or  $\geq$4), $b$-jets (one or $\geq$2) as well as the existence of hadronically decaying $\tau$ lepton. 
-				\begin{enumerate}
-				\item  1 $N_{b-jets}$, ~ $\geq$4 $N_{jets}$ , 0-$\tau_{had}$
-				\item  $\geq$2 $N_{b-jets}$,   $\geq$4 $N_{jets}$, 0-$\tau_{had}$
-				\item  1 $N_{b-jets}$, ~  3 $N_{jets}$ , 0-$\tau_{had}$
-				\item  $\geq$2 $N_{b-jets}$, 3 $N_{jets}$, 0-$\tau_{had}$
-				\item $\geq$1 $N_{b-jets}$, $\geq$3 $N_{jets}$, 1-$\tau_{had}$
-				\end{enumerate}
+Events with at least 3 Jets and least one bjet are considered in the fiducial volume. The acceptance for events passing this selection is $A_X^{\geq1b\geq3j}=1.79\times10^{-2}$ for \textsc{Sherpa} and 1.90$\times10^{-2}$ for \textsc{MadGraph5\_aMC@NLO} correspondingly.
+We then split into five regions, categorized by the number of jets (three or  $\geq$4), $b$-jets (one or $\geq$2) as well as the presence of hadronically decaying $\tau$ lepton. 
+				\begin{description}
+				\item Region 1: 1 $N_{b-jets}$, ~ $\geq$4 $N_{jets}$ , 0-$\tau_{had}$
+				\item  Region 2: $\geq$2 $N_{b-jets}$,   $\geq$4 $N_{jets}$, 0-$\tau_{had}$
+				\item  Region 3: 1 $N_{b-jets}$, ~  3 $N_{jets}$ , 0-$\tau_{had}$
+				\item  Region 4: $\geq$2 $N_{b-jets}$, 3 $N_{jets}$, 0-$\tau_{had}$
+				\item Region 5: $\geq$1 $N_{b-jets}$, $\geq$3 $N_{jets}$, 1-$\tau_{had}$
+				\end{description}
 
 %The event selection requirements are summarized in Table~\ref{}.
 %defined by 5 jets \& 3 b-jets or >=6jets \& >=4 b-jets.
 
-Events in fiducial volume are scaled to the total number of generated events. 
-The acceptance factors for events passing inclusive selection (i.e. $\geq$1$N_{b-jets}$, $\geq$3 $N_{jets}$, before further split to five regions defined above) are: $A_X^{\geq1b\geq3j}=1.79\times10^{-2}$ and 1.90$\times10^{-2}$ for \textsc{Sherpa} and \textsc{MadGraph5\_aMC@NLO} correspondingly.
+
 
 
 \subsection{Results}
 
-The nominal  \textsc{Sherpa} \ttW  sample is compared to its radiation uncertainty variations and alternative generator.
-The ratio plot shows the ratio of the alternative MC sample and scale variation to the nominal sample, where the colour scheme is given in the legend.
-%Discrepancies between PP8 $\mathrm{t\bar{t}}$ and the alternative generators can be seen in the $\Delta R$ quantities\&\ref{ttbb:mindR}, where at least in the 4b selection the difference to the alternative generators is larger than the uncertainty band given by the radiation variations.  
+The nominal  \textsc{Sherpa} \ttW  sample is compared to its radiation uncertainty variations and the alternative generator.
+The ratio plot shows the ratio of the alternative MC sample and scale variation to the nominal sample.%Discrepancies between PP8 $\mathrm{t\bar{t}}$ and the alternative generators can be seen in the $\Delta R$ quantities\&\ref{ttbb:mindR}, where at least in the 4b selection the difference to the alternative generators is larger than the uncertainty band given by the radiation variations.  
 %Interesting differences are also observed in the HT distributions, particularly in the 3b selection, as illustrated in Figures~\ref{ttbb:HTbjets}\&\ref{ttbb:HTljets}. The jet multiplicity, as in Figure~\ref{ttbb:Njets}, has poor agreement among the generators for large jet multiplicities.
 
-Significant discrepancies in the modelling of jet kinematics can be seen between \textsc{Sherpa} \ttW and \textsc{MadGraph5\_aMC@NLO} generators in 1$N_{b-jets}$ selections, while in $\geq2$$N_{b-jets}$ the difference is reduced, as illustrated in Figures~\ref{ttV:4j12b} and~\ref{ttV:3j12b}
+Significant discrepancies in the modelling of jet kinematics can be seen between the \textsc{Sherpa} \ttW and \textsc{MadGraph5\_aMC@NLO} generators in 1$N_{b-jets}$ selections, while in $\geq2$$N_{b-jets}$ the difference is reduced, as illustrated in Figures~\ref{ttV:4j12b} and~\ref{ttV:3j12b}
 
 \begin{figure}[!htb]
 \centering
@@ -82,7 +80,7 @@ Significant discrepancies in the modelling of jet kinematics can be seen between
 \includegraphics[width=0.45\textwidth]{Plots/ttV/c_Region_1_nJets}\\
 \includegraphics[width=0.45\textwidth]{Plots/ttV/c_Region_0_HT_jets}
 \includegraphics[width=0.45\textwidth]{Plots/ttV/c_Region_1_HT_jets}\\
-  \caption{Distribution of the jet multiplicities (top) and the sum of jets transverse momentum, $HT^{\text{jets}}$ (bottom), for the 1$b$-jet(left) and 4$b$-jet (right) selection requiring four and more jets. \label{ttV:4j12b}}
+  \caption{Distribution of the jet multiplicities (top) and the sum of jets transverse momentum, $HT^{\text{jets}}$ (bottom), for the 1$b$-jet(left) and 4$b$-jet (right) selection requiring four and more jets. Explanation in text. \label{ttV:4j12b}}
 \end{figure}
 
 
@@ -90,7 +88,7 @@ Significant discrepancies in the modelling of jet kinematics can be seen between
 \centering
 \includegraphics[width=0.45\textwidth]{Plots/ttV/c_Region_2_HT_jets}
 \includegraphics[width=0.45\textwidth]{Plots/ttV/c_Region_3_HT_jets}\\
-  \caption{Distribution of the sum of jets transverse momentum, $HT^{\text{jets}}$, for the 1$b$-jet(left) and 4$b$-jet (right) selection requiring three jets. \label{ttV:3j12b}}
+  \caption{Distribution of the sum of jets transverse momentum, $HT^{\text{jets}}$, for the 1$b$-jet(left) and 4$b$-jet (right) selection requiring three jets. Explanation in text. \label{ttV:3j12b}}
 \end{figure}
 
 Good agreement of the single lepton kinematics can be seen between nominal and alternative generators, as presented in Figures~\ref{ttV:lep_kin}.
@@ -101,7 +99,7 @@ While significant difference in shapes observed for the distributions  correlati
 \includegraphics[width=0.45\textwidth]{Plots/ttV/c_Region_1_lep_Pt_0}
 %\includegraphics[width=0.45\textwidth]{Plots/ttV/c_Region_1_lep_Pt_1}
 \includegraphics[width=0.45\textwidth]{Plots/ttV/c_Region_1_min_DRl0j}\\
-  \caption{Distribution of the leading lepton transverse momentum (left) and the minimum angular separation between the leading lepton and the nearest jet (right).
+  \caption{Distribution of the leading lepton transverse momentum (left) and the minimum angular separation between the leading lepton and the nearest jet (right). Explanation in text.
   \label{ttV:lep_kin}}
 \end{figure}
 
@@ -111,7 +109,7 @@ While significant difference in shapes observed for the distributions  correlati
 \includegraphics[width=0.45\textwidth]{Plots/ttV/c_Region_1_DRll01}
 \includegraphics[width=0.45\textwidth]{Plots/ttV/c_Region_1_maxEta_ll} 
 %\includegraphics[width=0.45\textwidth]{Plots/ttV/c_Region_1_lep_dPhi} 
-  \caption{Distribution of the angular distance between the two same-sign lepton (left) and  maximum between lepton $|\eta_{\ell 0}|$ and $|\eta_{\ell 1}|$(right).
+  \caption{Distribution of the angular distance between the two same-sign lepton (left) and  maximum between lepton $|\eta_{\ell 0}|$ and $|\eta_{\ell 1}|$(right). Explanation in text.
    \label{ttV:ll_kin}}
 \end{figure}
 % 
