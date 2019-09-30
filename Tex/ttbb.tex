@@ -32,7 +32,7 @@ Process & Generator & ME order & Parton shower & PDF & Tune  \\
 $\ttbar$  & \textsc{PowHeg v2} & \textsc{NLO} & \textsc{Pythia 8} &  5FS NNPDF3.0 NNLO & \textsc{A14}  \\
 $\ttbar+b\bar{b}$  & \textsc{PowHeg v2} & \textsc{NLO} & \textsc{Pythia 8} &  4FS NNPDF3.0 NNLO & \textsc{A14}  \\
 $\ttbar+b\bar{b}$  & \textsc{Sherpa 2.1.1} & \textsc{NLO} & \textsc{Sherpa} &  4FS NNPDF3.0 NNLO & \textsc{Sherpa} default  \\
-$\ttbar$  & \textsc{Sherpa 2.2.1} & \textsc{ME+PS@NLO} & \textsc{Sherpa} &  5FS NNPDF3.0 NNLO & \textsc{Sherpa} default  \\
+$\ttbar$  & \textsc{Sherpa 2.2.1} & tt+0,1p\@NLO+3p@LO & \textsc{Sherpa} &  5FS NNPDF3.0 NNLO & \textsc{Sherpa} default  \\
 \hline\hline
 \end{tabular}
 }
@@ -47,7 +47,9 @@ Two regions are considered, defined by 3 b-jets or $\geq$4 b-jets.
 The nominal PP8 $\mathrm{t\bar{t}}$ sample is compared to its radiation uncertainty variations and alternative generators, scaled to a common arbitrary integrated luminosity.
 The first ratio plot shows the ratio of the different MC samples to PP8 $\mathrm{t\bar{t}}$, where the colour scheme is given in the legend.
 Discrepancies between PP8 $\mathrm{t\bar{t}}$ and the alternative generators can be seen in the $\Delta R$ quantities, as in Figures~\ref{ttbb:avedR} and \ref{ttbb:mindR}, where at least in the 4b selection the difference to the alternative generators is larger than the uncertainty band given by the radiation variations.  
-Interesting differences are also observed in the $\mathrm{H_T}$ distributions, particularly in the 3b selection, as illustrated in Figures~\ref{ttbb:HTbjets} and \ref{ttbb:HTljets}. The jet multiplicity, as in Figure~\ref{ttbb:Njets}, has poor agreement among the generators for large jet multiplicities.
+In the b-jet pair invariant mass variables $\mathrm{M_{bb}^{max P_T}}$ and $\mathrm{M_{bb}^{min \Delta R}}$ shown in Figures~\ref{ttbb:MbbmaxPT} and~\ref{ttbb:MbbminDR}, the largest difference is seen between the Sherpa $\mathrm{t\bar{t}}$ and all other samples.
+Differences are also observed in the $\mathrm{H_T}$ distributions, particularly in the 3b selection. In $\mathrm{H_T}$ of all b-jets, as in Figures~\ref{ttbb:HTbjets}, one observes a difference between the 4 and 5 flavour schemes, while in $\mathrm{H_T}$ of all light jets, shown in Figure~\ref{ttbb:HTljets} a difference between PP8 $\mathrm{t\bar{t}}$ and the samples with b-jets in the ME can be seen. The jet multiplicity, as in Figure~\ref{ttbb:Njets}, has poor agreement among the generators for large jet multiplicities.
+Lastly, differences among the samples are shown for the $\mathrm{\eta_{jet}}$ distribution, in Figure~\ref{ttbb:jeteta}.
 
 The second ratio plot shows the relative uncertainty of the radiation variations, shown as the ratio of the uncertainty to the nominal for three cases. The PP8 $\mathrm{t\bar{t}}$ sample (black) and the PP8 tt+bb sample (blue), following the above description. It can be seen that the this type of uncertainties is larger for the tt+bb case than in the $\mathrm{t\bar{t}}$ calculation.
 Also, the sum of individual variations following the CMS approach (red) on PP8 $\mathrm{t\bar{t}}$ leads to a smaller uncertainty with respect to the simultaneous variation.
@@ -55,35 +57,56 @@ Also, the sum of individual variations following the CMS approach (red) on PP8 $
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.35\textwidth]{Plots/ttbb/hisgenEvt_Dr_GenBJetsAverage_4j3t__div}
-\includegraphics[width=0.35\textwidth]{Plots/ttbb/hisgenEvt_Dr_GenBJetsAverage_4j4t__div}
-  \caption{Distribution of the average opening angle between two b-jets, for the 3b selection (left) and the 4b-jet selection (right). Explanation in text. \label{ttbb:avedR}}
+\includegraphics[width=0.38\textwidth]{Plots/ttbb/hisgenEvt_Dr_GenBJetsAverage_4j3t__div}
+\includegraphics[width=0.38\textwidth]{Plots/ttbb/hisgenEvt_Dr_GenBJetsAverage_4j4t__div}
+  \caption{Distribution of the average opening angle between two b-jets, for the 3b selection (left) and the 4b-jet selection (right). The first ratio plot shows the ratio of the different MC samples to PP8 $\mathrm{t\bar{t}}$, together with its radiation uncertainties. The second ratio plot shows the relative uncertainty of the radiation variations divided by the nominal, for PP8 $\mathrm{t\bar{t}}$ (black) PP8 tt+bb (blue), following the above description of simultaneous variations. The sum of individual variations following the CMS approach (red) is shown for PP8 $\mathrm{t\bar{t}}$.  \label{ttbb:avedR}}
 \end{figure}
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.35\textwidth]{Plots/ttbb/hisgenEvt_Dr_MinDeltaRGenBJets_4j3t__div}
-\includegraphics[width=0.35\textwidth]{Plots/ttbb/hisgenEvt_Dr_MinDeltaRGenBJets_4j4t__div}
-  \caption{Distribution of the smallest opening angle between two b-jets, for the 3b selection (left) and the 4b-jet selection (right). Explanation in text. \label{ttbb:mindR}}
+\includegraphics[width=0.38\textwidth]{Plots/ttbb/hisgenEvt_Dr_MinDeltaRGenBJets_4j3t__div}
+\includegraphics[width=0.38\textwidth]{Plots/ttbb/hisgenEvt_Dr_MinDeltaRGenBJets_4j4t__div}
+  \caption{Distribution of the smallest opening angle between two b-jets, for the 3b selection (left) and the 4b-jet selection (right). The first ratio plot shows the ratio of the different MC samples to PP8 $\mathrm{t\bar{t}}$, together with its radiation uncertainties. The second ratio plot shows the relative uncertainty of the radiation variations divided by the nominal, for PP8 $\mathrm{t\bar{t}}$ (black) PP8 tt+bb (blue), following the above description of simultaneous variations. The sum of individual variations following the CMS approach (red) is shown for PP8 $\mathrm{t\bar{t}}$. \label{ttbb:mindR}}
 \end{figure}
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.35\textwidth]{Plots/ttbb/hisgenHTbjets_4j3t__div}
-\includegraphics[width=0.35\textwidth]{Plots/ttbb/hisgenHTbjets_4j4t__div}
-  \caption{Sum of b-jet transverse momenta, for the 3b selection (left) and the 4b-jet selection (right). Explanation in text. \label{ttbb:HTbjets}}
+\includegraphics[width=0.38\textwidth]{Plots/ttbb/hisgenEvt_M_HardestGenBJets_4j3t__div}
+\includegraphics[width=0.38\textwidth]{Plots/ttbb/hisgenEvt_M_HardestGenBJets_4j4t__div}
+  \caption{Distribution of the invariant mass in GeV of the two b-jets with the highest $\mathrm{P_T}$ sum, for the 3b selection (left) and the 4b-jet selection (right). The first ratio plot shows the ratio of the different MC samples to PP8 $\mathrm{t\bar{t}}$, together with its radiation uncertainties. The second ratio plot shows the relative uncertainty of the radiation variations divided by the nominal, for PP8 $\mathrm{t\bar{t}}$ (black) PP8 tt+bb (blue), following the above description of simultaneous variations. The sum of individual variations following the CMS approach (red) is shown for PP8 $\mathrm{t\bar{t}}$. \label{ttbb:MbbmaxPT}}
 \end{figure}
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.35\textwidth]{Plots/ttbb/hisgenHTljets_4j3t__div}
-\includegraphics[width=0.35\textwidth]{Plots/ttbb/hisgenHTljets_4j4t__div}
-  \caption{Sum of non-b-jet transverse momenta, for the 3b selection (left) and the 4b-jet selection (right). Explanation in text. \label{ttbb:HTljets}}
+\includegraphics[width=0.38\textwidth]{Plots/ttbb/hisgenEvt_M_MinDeltaRGenBJets_4j3t__div}
+\includegraphics[width=0.38\textwidth]{Plots/ttbb/hisgenEvt_M_MinDeltaRGenBJets_4j4t__div}
+  \caption{Distribution of the invariant mass in GeV of the two b-jets with the smallest opening angle, for the 3b selection (left) and the 4b-jet selection (right). The first ratio plot shows the ratio of the different MC samples to PP8 $\mathrm{t\bar{t}}$, together with its radiation uncertainties. The second ratio plot shows the relative uncertainty of the radiation variations divided by the nominal, for PP8 $\mathrm{t\bar{t}}$ (black) PP8 tt+bb (blue), following the above description of simultaneous variations. The sum of individual variations following the CMS approach (red) is shown for PP8 $\mathrm{t\bar{t}}$. \label{ttbb:MbbminDR}}
 \end{figure}
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.35\textwidth]{Plots/ttbb/hisgenNjets_4j3t__div}
-\includegraphics[width=0.35\textwidth]{Plots/ttbb/hisgenNjets_4j4t__div}
-  \caption{Jet multiplicity, for the 3b selection (left) and the 4b-jet selection (right). Explanation in text. \label{ttbb:Njets}}
+\includegraphics[width=0.38\textwidth]{Plots/ttbb/hisgenHTbjets_4j3t__div}
+\includegraphics[width=0.38\textwidth]{Plots/ttbb/hisgenHTbjets_4j4t__div}
+  \caption{Sum of b-jet transverse momenta in GeV, for the 3b selection (left) and the 4b-jet selection (right). The first ratio plot shows the ratio of the different MC samples to PP8 $\mathrm{t\bar{t}}$, together with its radiation uncertainties. The second ratio plot shows the relative uncertainty of the radiation variations divided by the nominal, for PP8 $\mathrm{t\bar{t}}$ (black) PP8 tt+bb (blue), following the above description of simultaneous variations. The sum of individual variations following the CMS approach (red) is shown for PP8 $\mathrm{t\bar{t}}$. \label{ttbb:HTbjets}}
+\end{figure}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.38\textwidth]{Plots/ttbb/hisgenHTljets_4j3t__div}
+\includegraphics[width=0.38\textwidth]{Plots/ttbb/hisgenHTljets_4j4t__div}
+  \caption{Sum of non-b-jet transverse momenta in GeV, for the 3b selection (left) and the 4b-jet selection (right). The first ratio plot shows the ratio of the different MC samples to PP8 $\mathrm{t\bar{t}}$, together with its radiation uncertainties. The second ratio plot shows the relative uncertainty of the radiation variations divided by the nominal, for PP8 $\mathrm{t\bar{t}}$ (black) PP8 tt+bb (blue), following the above description of simultaneous variations. The sum of individual variations following the CMS approach (red) is shown for PP8 $\mathrm{t\bar{t}}$. \label{ttbb:HTljets}}
+\end{figure}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.38\textwidth]{Plots/ttbb/hisgenNjets_4j3t__div}
+\includegraphics[width=0.38\textwidth]{Plots/ttbb/hisgenNjets_4j4t__div}
+  \caption{Jet multiplicity, for the 3b selection (left) and the 4b-jet selection (right). The first ratio plot shows the ratio of the different MC samples to PP8 $\mathrm{t\bar{t}}$, together with its radiation uncertainties. The second ratio plot shows the relative uncertainty of the radiation variations divided by the nominal, for PP8 $\mathrm{t\bar{t}}$ (black) PP8 tt+bb (blue), following the above description of simultaneous variations. The sum of individual variations following the CMS approach (red) is shown for PP8 $\mathrm{t\bar{t}}$. \label{ttbb:Njets}}
+\end{figure}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.38\textwidth]{Plots/ttbb/his3b_jeteta__div}
+\includegraphics[width=0.38\textwidth]{Plots/ttbb/his4b_jeteta__div}
+  \caption{Jet pseudorapidity, for the 3b selection (left) and the 4b-jet selection (right). The first ratio plot shows the ratio of the different MC samples to PP8 $\mathrm{t\bar{t}}$, together with its radiation uncertainties. The second ratio plot shows the relative uncertainty of the radiation variations divided by the nominal, for PP8 $\mathrm{t\bar{t}}$ (black) PP8 tt+bb (blue), following the above description of simultaneous variations. The sum of individual variations following the CMS approach (red) is shown for PP8 $\mathrm{t\bar{t}}$. \label{ttbb:jeteta}}
 \end{figure}
