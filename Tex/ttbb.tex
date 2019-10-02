@@ -15,7 +15,7 @@ The \textsc{Sherpa} tt+bb sample describes NLO tt+bb including parton showering 
 Both the PP8 tt+bb and the \textsc{Sherpa} tt+bb samples describe the additional bb-pair with NLO precision in QCD, taking into account the b-quark mass
 
 The \textsc{Sherpa} $\mathrm{t\bar{t}}$ sample uses \textsc{Sherpa} version 2.2.1~\cite{Gleisberg:2008ta} with the ME+PS@NLO (multi-leg) setup using the MEPS@NLO prescription~\cite{Hoeche:2012yf}, interfaced with \textsc{Openloops}. It provides NLO accuracy for up to one additional parton and LO accuracy for up to four additional partons. The NNPDF3.0 NNLO PDF set is used with a five-flavour scheme and both renormalisation and factorisation scales are set to $\sqrt{0.5\times(m_{T,t}^2+m_{T,\bar{t}}^2)}$. 
-A summary of all samples used is given in Table~\ref{tab:ttbbsamples}.
+A summary of all samples used is given in Table~\ref{tab:ttbbsamples}. All samples are filtered to contain only semi-leptonic $\mathrm{t\bar{t}}$ decays.
 
 \begin{table}
 \begin{center}
@@ -40,7 +40,7 @@ $\ttbar$  & \textsc{Sherpa 2.2.1} & tt+0,1p\@NLO+3p@LO & \textsc{Sherpa} &  5FS 
 \end{table}
 
 \subsection{Fiducial Volume}
-Object and event selection is defined at particle-level that closely matches the detector-level described in reference~\cite{HIGG-2017-03}. Jets are reconstructed from stable particles with a mean lifetime of $\tau > 3\times 10^{-11}$~s, using the anti-$k_t$ algorithm with a radius parameter of $R=0.4$, and are required to have $\mathrm{p_{T}>25 GeV}$ and $|\eta|< 2.5$. Jets are matched to b-hadrons with $\mathrm{p_{T}>5 GeV}$ by ghost matching~\cite{Cacciari:2008gn} and are referred to as b-jets. Electrons and muons, referred to as leptons, are required to satisfy $\mathrm{p_{T}>27 GeV}$. Selected leptons are required to be separated from selected jets by $\Delta R>0.4$. Events are selected with exactly one lepton and at least 4 jets, targeting the semi-leptonic $\mathrm{t\bar{t}}$ decay.
+Object and event selection is defined at particle-level that closely matches the detector-level described in reference~\cite{HIGG-2017-03} and was defined together with CMS as a common phase space. Jets are reconstructed from stable particles with a mean lifetime of $\tau > 3\times 10^{-11}$~s, using the anti-$k_t$ algorithm with a radius parameter of $R=0.4$, and are required to have $\mathrm{p_{T}>25 GeV}$ and $|\eta|< 2.5$. Jets are matched to b-hadrons with $\mathrm{p_{T}>5 GeV}$ by ghost matching~\cite{Cacciari:2008gn} and are referred to as b-jets. Electrons and muons, referred to as leptons, are required to satisfy $\mathrm{p_{T}>27 GeV}$. Selected leptons are required to be separated from selected jets by $\Delta R>0.4$. Events are selected with exactly one lepton and at least 4 jets, equivalent to the semi-leptonic $\mathrm{t\bar{t}}$ decay.
 Two regions are considered, defined by 3 b-jets or $\geq$4 b-jets.
 
 \subsection{Results}
@@ -48,7 +48,7 @@ The nominal PP8 $\mathrm{t\bar{t}}$ sample is compared to its radiation uncertai
 The first ratio plot shows the ratio of the different MC samples to PP8 $\mathrm{t\bar{t}}$, where the colour scheme is given in the legend.
 Discrepancies between PP8 $\mathrm{t\bar{t}}$ and the alternative generators can be seen in the $\Delta R$ quantities, as in Figures~\ref{ttbb:avedR} and \ref{ttbb:mindR}, where at least in the 4b selection the difference to the alternative generators is larger than the uncertainty band given by the radiation variations.  
 In the b-jet pair invariant mass variables $\mathrm{M_{bb}^{max P_T}}$ and $\mathrm{M_{bb}^{min \Delta R}}$ shown in Figures~\ref{ttbb:MbbmaxPT} and~\ref{ttbb:MbbminDR}, the largest difference is seen between the Sherpa $\mathrm{t\bar{t}}$ and all other samples.
-Differences are also observed in the $\mathrm{H_T}$ distributions, particularly in the 3b selection. In $\mathrm{H_T}$ of all b-jets, as in Figures~\ref{ttbb:HTbjets}, one observes a difference between the 4 and 5 flavour schemes, while in $\mathrm{H_T}$ of all light jets, shown in Figure~\ref{ttbb:HTljets} a difference between PP8 $\mathrm{t\bar{t}}$ and the samples with b-jets in the ME can be seen. The jet multiplicity, as in Figure~\ref{ttbb:Njets}, has poor agreement among the generators for large jet multiplicities.
+Differences are also observed in the $\mathrm{H_T}$ distributions, particularly in the 3b selection. In $\mathrm{H_T}$ of all b-jets, as in Figures~\ref{ttbb:HTbjets}, one observes a difference between PP8 $\mathrm{t\bar{t}}$ and the samples with b-jets in the ME, while in $\mathrm{H_T}$ of all light jets, shown in Figure~\ref{ttbb:HTljets} a difference between the 4 and 5 flavour schemes can be seen. The jet multiplicity, as in Figure~\ref{ttbb:Njets}, has poor agreement among the generators for large jet multiplicities.
 Lastly, differences among the samples are shown for the $\mathrm{\eta_{jet}}$ distribution, in Figure~\ref{ttbb:jeteta}.
 
 The second ratio plot shows the relative uncertainty of the radiation variations, shown as the ratio of the uncertainty to the nominal for three cases. The PP8 $\mathrm{t\bar{t}}$ sample (black) and the PP8 tt+bb sample (blue), following the above description. It can be seen that the this type of uncertainties is larger for the tt+bb case than in the $\mathrm{t\bar{t}}$ calculation.
