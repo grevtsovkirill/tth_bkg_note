@@ -39,7 +39,7 @@ $\ttbar W$  & \textsc{Sherpa 2.2.1} & \textsc{MePs@Nlo} & \textsc{Sherpa} &  NNP
 % Finally, the uncertainty due to the choice of PDF set is evaluated using the PDF4LHC15 prescription.
 
 \subsection{Fiducial Volume}
-Object and event selection is defined at particle-level that closely matches the detector-level described in reference~\cite{ATLAS-CONF-2019-045}. 
+Object and event selection is defined at particle-level that closely matches the detector-level described in reference~\cite{ATLAS-CONF-2019-045} and was defined together with CMS as a common phase space. 
 Jets are reconstructed from stable particles with a mean lifetime of $\tau > 3\times 10^{-11}$~s, using the anti-$k_t$ algorithm with a radius parameter of $R=0.4$.
 Jets are required to satisfy $\pt > 25~\gev$ and $|\eta| < 2.5$.
 Jets are matched to $b$-hadrons with $\mathrm{p_{T}>5 GeV}$ by ghost matching~\cite{Cacciari:2008gn} and are referred to as $b$-jets. 
@@ -77,6 +77,8 @@ The ratio plot shows the ratio of the alternative MC sample and scale variation 
 %Interesting differences are also observed in the HT distributions, particularly in the 3b selection, as illustrated in Figures~\ref{ttbb:HTbjets}\&\ref{ttbb:HTljets}. The jet multiplicity, as in Figure~\ref{ttbb:Njets}, has poor agreement among the generators for large jet multiplicities.
 
 Sizeable discrepancies in the modelling of jet kinematics can be seen between the \textsc{Sherpa} \ttW and \textsc{MadGraph5\_aMC@NLO} generators in 1$b$-jet selections, while in $\geq2b$-jets the difference is reduced, as illustrated in Figures~\ref{ttV:4j12b} and~\ref{ttV:3j12b} for the high (Regions 1 and 2) and low (Regions 3 and 4) jet multiplicities correspondingly. 
+Differences in distributions of $b$-jet kinematics are following a similar trend - sizeable discrepancies in 1$b$-jet selections and agreed within scale uncertainties for 2$b$-jets selections, as presented on Figures~\ref{ttV:4jbinfo} for Regions 1 and 2.
+
 
 \begin{figure}[!htb]
 \centering
@@ -93,6 +95,16 @@ Sizeable discrepancies in the modelling of jet kinematics can be seen between th
 \includegraphics[width=0.45\textwidth]{Plots/ttV/c_Region_2_HT_jets}
 \includegraphics[width=0.45\textwidth]{Plots/ttV/c_Region_3_HT_jets}\\
   \caption{Distribution of the sum of jets transverse momentum, $HT^{\text{jets}}$, for the Region 3 with 1$b$-jet (left) and Region 4 with 2$b$-jets (right) selection requiring exactly three jets. Explanation in text. \label{ttV:3j12b}}
+\end{figure}
+
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.45\textwidth]{Plots/ttV/c_Region_0_nBtagJets}
+\includegraphics[width=0.45\textwidth]{Plots/ttV/c_Region_1_nBtagJets}\\
+\includegraphics[width=0.45\textwidth]{Plots/ttV/c_Region_0_Bjet_Pt_0}
+\includegraphics[width=0.45\textwidth]{Plots/ttV/c_Region_1_Bjet_Pt_0}\\
+  \caption{Distribution of the $b$-jet multiplicities (top) and the leading $b$-jet transverse momentum (bottom), for the Region 1 with 1$b$-jet (left) and Region 2 with 2$b$-jets (right) selection requiring four and more jets. Explanation in text. \label{ttV:4jbinfo}}
 \end{figure}
 
 Good agreement of the single lepton kinematics can be seen between nominal and alternative generators for $\geq2b$-jets selections, as presented in the right of Figures~\ref{ttV:lep_kin} (presented Region 2, while similar behaviour seen in Region 4 as well). 
