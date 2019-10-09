@@ -47,14 +47,45 @@ Events are selected with exactly one lepton and at least 4 jets, equivalent to t
 %Two regions are considered, defined by 3 b-jets or $\geq$4 b-jets.
 Two analysis regions are considered. The first is defined by the presence of exactly three selected $b$-jets, while the second requires four or more such $b$-jets.
 
+
+%, , , , , , $N_{jets}$, 
+\begin{table}[]
+\begin{center}
+\caption{\label{tab:ttbb_varlist}
+The list of the validation variables for the comparison of the generators for $ttbb$ process.}
+\vspace{0.25cm}
+{\small
+\setlength\tabcolsep{1.5pt}
+\begin{tabular}{l|l}
+\hline\hline
+Variable & Description  \\ \hline
+$\Delta R (b,b)_{ave}$&    average over $\Delta R(b, b)$ build from all 2 b-jet combinations in the event           \\ 
+$\Delta R (b,b)_{min}$ &    $\Delta R$ of the two b-jets in the event which are closest in $\Delta R $          \\ 
+$M (b,b)_{maxP_T}$ &      mass of the 2 b-jet system build of the b-jets with maximal $p_T$         \\ 
+$M (b,b)_{min\Delta R(b,b)}$ &         mass of the 2 b-jet system build of the b-jets closest in $\Delta R $     \\ 
+$HT$ of $b$-jets&           scalar sum of all b-jet $p_T$ in the event    \\ 
+$HT$ of light-jets&        scalar sum of $p_T$ of all light jets in the event       \\ 
+$N_{jets}$   &     number of all jets in the event (including b-jets)          \\ 
+$\eta_{jets}$ &          $\eta$ of leading light jet in the event     \\ 
+    \hline\hline    
+\end{tabular}
+}
+\end{center}
+\end{table}
+
+
+
+
 \subsection{Results}
 The nominal PP8 $\mathrm{t\bar{t}}$ sample is compared to its radiation uncertainty variations and alternative generators, 
 %scaled to a common arbitrary integrated luminosity.
 scaled to a common arbitrary total yield before any acceptance effects.
 The first ratio plot shows the ratio of the different MC samples to PP8 $\mathrm{t\bar{t}}$, where the colour scheme is given in the legend.
+The list of the validation variables for this comparison is presented in this note summarised in Table~\ref{tab:ttbb_varlist}.
+
 Discrepancies between PP8 $\mathrm{t\bar{t}}$ and the alternative generators can be seen in the $\Delta R$ quantities, as in Figures~\ref{ttbb:avedR} and \ref{ttbb:mindR}, where at least in the 4b selection the difference to the alternative generators is larger than the uncertainty band given by the radiation variations.  
 %In the b-jet pair invariant mass variables $\mathrm{M_{bb}^{max P_T}}$ and $\mathrm{M_{bb}^{min \Delta R}}$ shown in Figures~\ref{ttbb:MbbmaxPT} and~\ref{ttbb:MbbminDR}, the largest difference is seen between the Sherpa $\mathrm{t\bar{t}}$ and all other samples.
-Two types of $b$-jet pairs are defined: one pair is build from the two $b$-jets with the highest $p_T$, called $maxPT$, and one pair from the two $b$-quarks which are closest in $\Delta R$, called $min \Delta R$ . The invariant mass of the b-jet pairs are shown in Figures~\ref{ttbb:MbbmaxPT} and~\ref{ttbb:MbbminDR}, the largest difference is seen between the Sherpa $\mathrm{t\bar{t}}$ and all other samples.
+Two types of $b$-jet pairs are defined: one pair is build from the two $b$-jets with the highest $p_T$, called $maxPT$, and one pair from the two $b$-jets which are closest in $\Delta R$, called $min \Delta R$ . The invariant mass of the b-jet pairs are shown in Figures~\ref{ttbb:MbbmaxPT} and~\ref{ttbb:MbbminDR}, the largest difference is seen between the Sherpa $\mathrm{t\bar{t}}$ and all other samples.
 %
 Differences are also observed in the $\mathrm{H_T}$ distributions, particularly in the 3b selection. In $\mathrm{H_T}$ of all b-jets, as in Figures~\ref{ttbb:HTbjets}, one observes a difference between PP8 $\mathrm{t\bar{t}}$ and the samples with b-jets in the ME, while in $\mathrm{H_T}$ of all light jets, shown in Figure~\ref{ttbb:HTljets} a difference between the 4 and 5 flavour schemes can be seen. The jet multiplicity, as in Figure~\ref{ttbb:Njets}, has poor agreement among the generators for large jet multiplicities.
 Lastly, differences among the samples are shown for the $\mathrm{\eta_{jet}}$ distribution, in Figure~\ref{ttbb:jeteta}.
