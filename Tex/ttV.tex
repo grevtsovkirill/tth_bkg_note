@@ -44,16 +44,17 @@ Object and event selection is defined at particle-level that closely matches the
 Jets are reconstructed from stable particles with a mean lifetime of $\tau > 3\times 10^{-11}$~s, using the anti-$k_t$ algorithm with a radius parameter of $R=0.4$.
 Jets are required to satisfy $\pt > 25~\gev$ and $|\eta| < 2.5$.
 Jets are matched to $b$-hadrons with $\mathrm{p_{T}>5 GeV}$ by ghost matching~\cite{Cacciari:2008gn} and are referred to as $b$-jets. 
-Electrons and muons, referred to as light leptons, are required to be separated from selected jets by $\Delta R>0.4$. 
+Electrons and muons, referred to as light leptons, are required to be separated from selected jets by $\Delta R>0.4$ and are otherwise removed. 
 Hadronically decaying $\tau$ leptons are required to satisfy $\pt > 25~\gev$ and $|\eta| < 2.5$.
 Events are selected with exactly two light leptons.
 Leptons are required to have $|\eta|< 2.5$ and $\mathrm{p_{T}>25(20) GeV}$ for leading (subleading) lepton. 
 Leptons are required to have same charge, targeting the semi-leptonic $\mathrm{t\bar{t}}$ decay and leptonic $W$ decay.
 
 %Events separated by Hadronic tau decays Hadronically decaying $\tau$ lepton
-Events with at least 3 jets and least one $b$-jet are considered in the fiducial volume. 
+Events with at least 3 jets and at least one of them being a $b$-jet are considered in the fiducial volume. 
+%Events with at least 3 jets and least one $b$-jet are considered in the fiducial volume. 
 The acceptance for events passing this selection is $A_X^{\geq1b\geq3j}=1.82\times10^{-2}$ for \textsc{Sherpa} and 1.90$\times10^{-2}$ for \textsc{MadGraph5\_aMC@NLO} correspondingly.
-We then split into five regions, categorized by the number of jets (three or  $\geq$4), $b$-jets (one or $\geq$2) as well as the presence of hadronically decaying $\tau$ lepton. 
+We then split into five regions, categorized by the number of jets of any flavour (three or  $\geq$4), $b$-jets (one or $\geq$2) as well as the presence of hadronically decaying $\tau$ lepton. 
 				\begin{description}
 				\item Region 1: 1 $N_{b-jets}$, ~ $\geq$4 $N_{jets}$ , 0-$\tau_{had}$
 				\item Region 2: $\geq$2 $N_{b-jets}$,   $\geq$4 $N_{jets}$, 0-$\tau_{had}$
