@@ -86,44 +86,66 @@ l86: Comma missing after "Figure 7".
 l88: eta for which jet? Leading? Also, specify this in the x-axis label of Fig. 9.
 
 Table 2 caption: "of the ttW", i.e., add "the".
+=> fixed.
 
 l102f: Are all combinations tried, i.e., also 0.5 together with 2.0? I.e., 9-point variation vs. 7-point variation. It would be good to make this explicit.
+=> only 2 point variation: MUR05_MUF05 and MUR2_MUF2
 
 l112: "Jets that are matched...", i.e., add "that", and remove "and" after ref. [17].
+=> fixed.
 
 l113: Space missing before GeV. Same on l116.
+=> fixed.
 
 l114: Are the jets or the leptons removed, in case they are nearby? 
+=> and are otherwise removed. 
 
 l118: "at least three jets" does this refer to any jet or only non b-jets? If you can, please make it explicit.
+=> fixed: any flavour 
 
 l122-126: You should probably write these as, e.g., "N_{b-\mathrm{jets}} = 1, N_\mathrm{jets} = 3, N_{\tau_\mathrm{had}} = 0", as these are valid integer-value variables. Of course, you need to define these right before are after this, as, e.g., "where N_jets denotes the number of jets (that are not b-jets?), N_b-jets denotes the number of b-jets, and...". Also , all these text suffixes need to be in \mathrm mode. Same elsewhere in the document for these things.
 
 l127: "by the ttH" add "the". Same on l129 before "2l same-sign...".
+=> fixed.
 
 Footnote 1: "then in reference [2]", i.e., add "reference". Also, capital "C" in collaboration. Period missing.
+=> fixed.
 
 Footnote 2: Make a full sentece (with a period at the end) out of it.
 
 l132: "The ratio plots show the ratios of..."
+=> fixed.
 
 l135: "in the N_b-jet = 1 regions, while the difference is reduced in the N_b-jets >= 2 regions, as ..." 
+=> fixed.
 
 l138: "...discrepancies in the N_b-jet = 1 regions and agreement within scale uncertainties in the N_b-jets >= 2 regions, as... "
+=> fixed.
 
 l141: "N_b-jets >= 2 selections, as shown on the right of Figure 13, representing Region 2. Similar behaviour is also seen in Region 4.". 
+=> fixed.
 
 l143: "as shown on the right of Figure 13, representing Region 1. A similar trend is also seen in Region 3."
+=> sentence removed
 
 l145-149: Please split this up into several sentences. 
+=> fixed.
 
 l149: "... differences observed in the N_b-jet = 1 regions are increased w.r.t. the ones seen in the N_b-jets >= 2 regions."
+=> sentence removed
 
 l152: "an N_{\tau_\mathrm{had}} = 1 selection are presented in Figure 15. A difference of 10% is observed between nominal and alternative generators for low jet multiplicities. While the difference is covered by the scale variation uncertainties for the N_\mathrm{jets} >= 5 selections."
+=> sentences are rewritten
 
 l155ff: "The distribution of N_{b-\mathrm{jets}} are in agreement for N_{b-\mathrm{jets}} = 2, while a sizeable difference is observed for N_{b-\mathrm{jets}} = 1, which is similar to the N_{\tau_\mathrm{had}} = 0 selections. Lepton kinematic distributions show differences in shapes between the nominal and alternative generator."
+=> fixed.
 
-Captions of Fig. 10-15: "Further explanation is given in the text." Also, please adopt the  N_{b-\mathrm{jets}} notation here. You need to define HTjets in the main body somewhere. 
+
+Captions of Fig. 10-15: "Further explanation is given in the text." Also, please adopt the  N_{b-\mathrm{jets}} notation here.
+=> fixed.
+
+ You need to define HTjets in the main body somewhere. 
+=> dedicated table with variables and their definitions.
 
 Caption Fig. 14:  
 eta_l0 and eta_l1 are not defined. 
