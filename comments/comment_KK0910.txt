@@ -47,16 +47,22 @@ l64: mT is not defined.
 => fixed.
 
 l71: pT and eta are not defined.
+=> fixed.
 
 l71: space missing between number and GeV, also l72, l73. Please check the whole document.
+=> fixed.
 
 l71: "Jets that are matched..." add "that".
+=> fixed.
 
 l73: No |eta|<2.5 cut on leptons?
+=> fixed.
 
 l73f: The overlap removal description is ambiguous: is the lepton or the jet removed, in case of overlap?
+=> fixed.
 
 l75: change to: "Two analysis regions are considered. The first is defined by the presence of exactly three selected b-jets, while the second requires four or more such b-jets."
+=> fixed.
 
 l78: Do you mean "scaled to a common arbitraty cross-section times branching fraction times integrated luminosity"? If so, you could just say "scaled to a common arbitraty total yield before any acceptance effects"?
 
