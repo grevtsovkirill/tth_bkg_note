@@ -9,8 +9,7 @@ For all figures, please make sure that the lables don't overlap with the histogr
 For the ttbb plots, you always have an x-axis label like "3b DeltaR(b,b)". But the 3b part should not be part of the x-axis, but rather a label in the plot (unify this with what you end up calling it, see my comment to l81). 
 
 For the ttW plots, the "0" of the y-axis is always truncated. Please fix this (you could, e.g., set the background color of the pad to transparent).
-
-
+=> fixed. (while not with transparent option - doesn't work for pdfs)
 
 Specific textual comments:
 
