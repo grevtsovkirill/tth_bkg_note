@@ -1,0 +1,120 @@
+Karsten Koeneke wrote on 09 Oct 2019, 18:41:
+
+
+Dear analysts and editors,
+
+thank you very much for these very interesting results. I do not have any further physics commments besides the ones that were discussed during the Higgs approval meeting. I do have some editorial comments though, please see below.
+
+Best,
+
+Karsten
+
+General textual comments:
+
+
+You use the bar for the antiparticles inconsistently throughout the note, please unify. E.g., l24 H->bb without bar.
+
+For all figures, please make sure that the lables don't overlap with the histograms. Also, you still have some space to enlarge the legends, which would be helpful for the presentations. Also, the axis labels on the ratio plot (text and numerals) are much smaller compared to the main plot. Please enlarge these appropriately.
+
+For the ttbb plots, you always have an x-axis label like "3b DeltaR(b,b)". But the 3b part should not be part of the x-axis, but rather a label in the plot (unify this with what you end up calling it, see my comment to l81). 
+
+For the ttW plots, the "0" of the y-axis is always truncated. Please fix this (you could, e.g., set the background color of the pad to transparent).
+
+
+Specific textual comments:
+
+l25: I would call these not "final states", but rather "analyses". Multi-lepton is not a final state, I would say.
+
+l29: CMS Collaboration (capital C).
+
+l35: You use the PP8 acronym before it is defined. Also for MC.
+
+l40: You need to citations for Phythia and the A14 tune.
+
+l40f: I don't fully understand this sentence. To what exactly were the muR and muF parameters set? Which if the two top quarks (are they by construction always having the same transverse mass)? Or do you explicitly mean the top quark, as opposed to the anti-top?
+
+l43: parameters (plural s).
+
+l47: No space before the comma.
+
+l49: No space before the period.
+
+l57: Period missing after citation. And one after "ref". But you should keep it consistent. In line 54, you spell out reference. 
+
+l60: Period missing.
+
+l64: mT is not defined.
+
+l71: pT and eta are not defined.
+
+l71: space missing between number and GeV, also l72, l73. Please check the whole document.
+
+l71: "Jets that are matched..." add "that".
+
+l73: No |eta|<2.5 cut on leptons?
+
+l73f: The overlap removal description is ambiguous: is the lepton or the jet removed, in case of overlap?
+
+l75: change to: "Two analysis regions are considered. The first is defined by the presence of exactly three selected b-jets, while the second requires four or more such b-jets."
+
+l78: Do you mean "scaled to a common arbitraty cross-section times branching fraction times integrated luminosity"? If so, you could just say "scaled to a common arbitraty total yield before any acceptance effects"?
+
+l80: Define the deltaR quantities that are shown.
+
+l81: The term "4b selection" is not defined. You could define it on l75, if you want. Dito for the "3b selection" on l84.
+
+l82: The Mbb variables are not defined. 
+
+l84: HT is not defined. This is defined in l100. You should harmonize these two chapters. 
+
+l85: ME-> matrix element.
+
+l86: Comma missing after "Figure 7".
+
+l88: eta for which jet? Leading? Also, specify this in the x-axis label of Fig. 9.
+
+Table 2 caption: "of the ttW", i.e., add "the".
+
+l102f: Are all combinations tried, i.e., also 0.5 together with 2.0? I.e., 9-point variation vs. 7-point variation. It would be good to make this explicit.
+
+l112: "Jets that are matched...", i.e., add "that", and remove "and" after ref. [17].
+
+l113: Space missing before GeV. Same on l116.
+
+l114: Are the jets or the leptons removed, in case they are nearby? 
+
+l118: "at least three jets" does this refer to any jet or only non b-jets? If you can, please make it explicit.
+
+l122-126: You should probably write these as, e.g., "N_{b-\mathrm{jets}} = 1, N_\mathrm{jets} = 3, N_{\tau_\mathrm{had}} = 0", as these are valid integer-value variables. Of course, you need to define these right before are after this, as, e.g., "where N_jets denotes the number of jets (that are not b-jets?), N_b-jets denotes the number of b-jets, and...". Also , all these text suffixes need to be in \mathrm mode. Same elsewhere in the document for these things.
+
+l127: "by the ttH" add "the". Same on l129 before "2l same-sign...".
+
+Footnote 1: "then in reference [2]", i.e., add "reference". Also, capital "C" in collaboration. Period missing.
+
+Footnote 2: Make a full sentece (with a period at the end) out of it.
+
+l132: "The ratio plots show the ratios of..."
+
+l135: "in the N_b-jet = 1 regions, while the difference is reduced in the N_b-jets >= 2 regions, as ..." 
+
+l138: "...discrepancies in the N_b-jet = 1 regions and agreement within scale uncertainties in the N_b-jets >= 2 regions, as... "
+
+l141: "N_b-jets >= 2 selections, as shown on the right of Figure 13, representing Region 2. Similar behaviour is also seen in Region 4.". 
+
+l143: "as shown on the right of Figure 13, representing Region 1. A similar trend is also seen in Region 3."
+
+l145-149: Please split this up into several sentences. 
+
+l149: "... differences observed in the N_b-jet = 1 regions are increased w.r.t. the ones seen in the N_b-jets >= 2 regions."
+
+l152: "an N_{\tau_\mathrm{had}} = 1 selection are presented in Figure 15. A difference of 10% is observed between nominal and alternative generators for low jet multiplicities. While the difference is covered by the scale variation uncertainties for the N_\mathrm{jets} >= 5 selections."
+
+l155ff: "The distribution of N_{b-\mathrm{jets}} are in agreement for N_{b-\mathrm{jets}} = 2, while a sizeable difference is observed for N_{b-\mathrm{jets}} = 1, which is similar to the N_{\tau_\mathrm{had}} = 0 selections. Lepton kinematic distributions show differences in shapes between the nominal and alternative generator."
+
+Captions of Fig. 10-15: "Further explanation is given in the text." Also, please adopt the  N_{b-\mathrm{jets}} notation here. You need to define HTjets in the main body somewhere. 
+
+Caption Fig. 14:  
+eta_l0 and eta_l1 are not defined. 
+"... for Region 1 with  N_{b-\mathrm{jets}} = 1 (left) and Region 2 with N_{b-\mathrm{jets}} >= 2 (right) and requiring four or more jets."
+
+
