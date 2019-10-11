@@ -1,14 +1,4 @@
 Karsten Koeneke wrote on 09 Oct 2019, 18:41:
-
-
-Dear analysts and editors,
-
-thank you very much for these very interesting results. I do not have any further physics commments besides the ones that were discussed during the Higgs approval meeting. I do have some editorial comments though, please see below.
-
-Best,
-
-Karsten
-
 General textual comments:
 
 
@@ -21,11 +11,14 @@ For the ttbb plots, you always have an x-axis label like "3b DeltaR(b,b)". But t
 For the ttW plots, the "0" of the y-axis is always truncated. Please fix this (you could, e.g., set the background color of the pad to transparent).
 
 
+
 Specific textual comments:
 
 l25: I would call these not "final states", but rather "analyses". Multi-lepton is not a final state, I would say.
+=> fixed.
 
 l29: CMS Collaboration (capital C).
+=> fixed.
 
 l35: You use the PP8 acronym before it is defined. Also for MC.
 
