@@ -21,22 +21,30 @@ l29: CMS Collaboration (capital C).
 => fixed.
 
 l35: You use the PP8 acronym before it is defined. Also for MC.
+=> fixed.
 
 l40: You need to citations for Phythia and the A14 tune.
 
 l40f: I don't fully understand this sentence. To what exactly were the muR and muF parameters set? Which if the two top quarks (are they by construction always having the same transverse mass)? Or do you explicitly mean the top quark, as opposed to the anti-top?
+=> specified.
 
 l43: parameters (plural s).
+=> fixed.
 
 l47: No space before the comma.
+=> fixed.
 
 l49: No space before the period.
+=> fixed.
 
 l57: Period missing after citation. And one after "ref". But you should keep it consistent. In line 54, you spell out reference. 
+=> fixed to ref. in both cases
 
 l60: Period missing.
+=> fixed.
 
 l64: mT is not defined.
+=> fixed.
 
 l71: pT and eta are not defined.
 
