@@ -11,14 +11,14 @@ The choice of renormalisation and factorisation scales is $\mu_R = \mu_F = H_\te
 
 
 
-Systematic uncertainties due to missing higher-order QCD corrections are estimated by varying the factorisation and renormalisation scales in the nominal sample simultaneously by a factor of 0.5 and 2.0 with respect to the central value. 
+Systematic uncertainties due to missing higher-order QCD corrections are estimated by varying the factorisation and renormalisation scales in the nominal sample simultaneously by a factor of 0.5 and 2.0 with respect to the central value. % ($\mu_R=\mu_F=0.5$ and $\mu_R=\mu_F=2.0$ ). 
 Uncertainties associated with the modelling of additional QCD radiation are estimated by comparing the nominal \ttW prediction with that of an alternative sample that was generated at NLO with the \textsc{MadGraph5\_aMC@NLO}~2.2.1 generator using the same scale choice and PDF set as for the nominal sample, and interfaced to \textsc{Pythia}~8.2 in combination with the A14 tune. 
 The samples configurations are summarised in Table~\ref{tab:mcconfig}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}
 \begin{center}
 \caption{\label{tab:mcconfig}
-The configurations used for the event generation of \ttW processes.}
+The configurations used for the event generation of the \ttW processes.}
 \vspace{0.25cm}
 {\small
 \setlength\tabcolsep{1.5pt}
@@ -42,29 +42,29 @@ $\ttbar W$  & \textsc{Sherpa 2.2.1} & \textsc{MePs@Nlo} & \textsc{Sherpa} &  NNP
 \label{sec:ttw_fid}
 Object and event selection is defined at particle-level that closely matches the detector-level described in reference~\cite{ATLAS-CONF-2019-045} and was defined together with CMS as a common phase space. 
 Jets are reconstructed from stable particles with a mean lifetime of $\tau > 3\times 10^{-11}$~s, using the anti-$k_t$ algorithm with a radius parameter of $R=0.4$.
-Jets are required to satisfy $\pt > 25~\gev$ and $|\eta| < 2.5$.
-Jets are matched to $b$-hadrons with $\mathrm{p_{T}>5 GeV}$ by ghost matching~\cite{Cacciari:2008gn} and are referred to as $b$-jets. 
-Electrons and muons, referred to as light leptons, are required to be separated from selected jets by $\Delta R>0.4$ and are otherwise removed. 
-Hadronically decaying $\tau$ leptons are required to satisfy $\pt > 25~\gev$ and $|\eta| < 2.5$.
+Jets are required to satisfy \pt > 25 GeV and $|\eta|$ < 2.5.
+Jets that are matched to $b$-hadrons with \pt>5 GeV by ghost matching~\cite{Cacciari:2008gn} are referred to as $b$-jets. 
+Electrons and muons, referred to as light leptons $\ell$, are required to be separated from selected jets by $\Delta R>0.4$ and are otherwise removed. 
+Hadronically decaying $\tau$ leptons are required to satisfy \pt> 25 GeV and $|\eta| $< 2.5.
 Events are selected with exactly two light leptons.
-Leptons are required to have $|\eta|< 2.5$ and $\mathrm{p_{T}>25(20) GeV}$ for leading (subleading) lepton. 
+Leptons are required to have $|\eta|$< 2.5 and \pt>25(20) GeV for leading $\ell_0$ (subleading $\ell_1$) lepton (\pt ordered). 
 Leptons are required to have same charge, targeting the semi-leptonic $\mathrm{t\bar{t}}$ decay and leptonic $W$ decay.
 
 %Events separated by Hadronic tau decays Hadronically decaying $\tau$ lepton
 Events with at least 3 jets and at least one of them being a $b$-jet are considered in the fiducial volume. 
 %Events with at least 3 jets and least one $b$-jet are considered in the fiducial volume. 
 The acceptance for events passing this selection is $A_X^{\geq1b\geq3j}=1.82\times10^{-2}$ for \textsc{Sherpa} and 1.90$\times10^{-2}$ for \textsc{MadGraph5\_aMC@NLO} correspondingly.
-We then split into five regions, categorized by the number of jets of any flavour (three or  $\geq$4), $b$-jets (one or $\geq$2) as well as the presence of hadronically decaying $\tau$ lepton. 
+We then split into five regions, categorized by the number of jets of any flavour (three or  $\geq$4), $N_{b-\mathrm{jets}}$ (one or $\geq$2) as well as the presence of hadronically decaying $\tau$ lepton. 
 				\begin{description}
-				\item Region 1: 1 $N_{b-jets}$, ~ $\geq$4 $N_{jets}$ , 0-$\tau_{had}$
-				\item Region 2: $\geq$2 $N_{b-jets}$,   $\geq$4 $N_{jets}$, 0-$\tau_{had}$
-				\item Region 3: 1 $N_{b-jets}$, ~  3 $N_{jets}$ , 0-$\tau_{had}$
-				\item Region 4: $\geq$2 $N_{b-jets}$, 3 $N_{jets}$, 0-$\tau_{had}$
-				\item Region 5: $\geq$1 $N_{b-jets}$, $\geq$3 $N_{jets}$, 1-$\tau_{had}$
+				\item Region 1: $N_{b-\mathrm{jets}}=$1, $N_{\mathrm{jets}}\geq$4 , 0-$\tau_{had}$
+				\item Region 2: $N_{b-\mathrm{jets}}\geq$2,   $N_{\mathrm{jets}}\geq$4, 0-$\tau_{had}$
+				\item Region 3: $N_{b-\mathrm{jets}}=$1,  $N_{\mathrm{jets}}$=3 , 0-$\tau_{had}$
+				\item Region 4: $N_{b-\mathrm{jets}}\geq$2, $N_{\mathrm{jets}}$=3, 0-$\tau_{had}$
+				\item Region 5: $N_{b-\mathrm{jets}}\geq$1, $N_{\mathrm{jets}}\geq$3 , 1-$\tau_{had}$
 				\end{description}
-Definitions of the regions are motivated by $t\bar{t}H$ analysis strategy.
-Regions 1 and 2 corresponds to the signal regions\footnote{slightly different then in ~\cite{ATLAS-CONF-2019-045}, in order to define a common selection with the CMS collaboration} and Regions 3 and 4 are used as control regions in the 2$\ell$ same-sign  0-$\tau_{had}$ $t\bar{t}H$ channel.
-Definition of Region 5 is closely followed\footnote{requirement on jet multiplicity is relaxed} by the selections in 2$\ell$ same-sign 1-$\tau_{had}$ $t\bar{t}H$ channel.
+Definitions of the regions are motivated by the $t\bar{t}H$ analysis strategy.
+Regions 1 and 2 corresponds to the signal regions\footnote{slightly different then in ref.~\cite{ATLAS-CONF-2019-045}, in order to define a common selection with the CMS Collaboration.} and Regions 3 and 4 are used as control regions in the 2$\ell$ same-sign  0-$\tau_{had}$ $t\bar{t}H$ channel.
+Definition of Region 5 is closely followed\footnote{requirement on jet multiplicity is relaxed.} by the selections in the 2$\ell$ same-sign 1-$\tau_{had}$ $t\bar{t}H$ channel.
 
 %The event selection requirements are summarized in Table~\ref{}.
 %defined by 5 jets \& 3 b-jets or >=6jets \& >=4 b-jets.
@@ -102,7 +102,7 @@ $max |\eta _l|$      &      Maximum of lepton's pseudorapidity       &     1,2  
 %Distribution of the angular distance between the two leptons (top), maximum between lepton $|\eta_{\ell 0}|$ and $|\eta_{\ell 1}|$ (centre), azimuthal separation between the leptons $\Delta \phi _{\ell \ell }$ (bottom) , for the Region 1 with 1$b$-jet (left) and Region 2 with 2$b$-jets (right) selection requiring four and more jets. 
 
 The nominal  \textsc{Sherpa} \ttW  sample is compared to its radiation uncertainty variations and the alternative generator.
-The ratio plot shows the ratio of the alternative MC sample and scale variation to the nominal sample.
+The ratio plots show the ratios of the alternative MC sample and scale variation to the nominal sample.
 
 The list of the validation variables for the comparison of the \ttW generators presented in this note summarised in Table~\ref{tab:ttw_varlist}.
 Two sets of distribution are presented: the first comparing the shapes of the different generators - distributions are normalised to the integral, the second - comparing overall generator agreement - distributions are scaled to the generator cross section (taken directly from generation - i.e. not including any correction factors).
@@ -110,9 +110,10 @@ Two sets of distribution are presented: the first comparing the shapes of the di
 \subsubsection{Shape comparison}
 \label{sec:ttw_shape}
 In the following shape agreement between nominal and alternative generators will be presented - distributions are normalised to the integral.
+%$N_{b-\mathrm{jets}}=$
 
-Sizeable discrepancies in the modelling of jet kinematics can be seen between the \textsc{Sherpa} \ttW and \textsc{MadGraph5\_aMC@NLO} generators in 1$b$-jet selections, while in $\geq2b$-jets the difference is reduced, as illustrated in Figures~\ref{ttV:4j12b} and~\ref{ttV:3j12b} for the high (Regions 1 and 2) and low (Regions 3 and 4) jet multiplicities correspondingly. 
-Differences in distributions of $b$-jet kinematics are following a similar trend - sizeable discrepancies in 1$b$-jet selections and agreed within scale uncertainties for 2$b$-jets selections, as presented on Figures~\ref{ttV:4jbinfo} for Regions 1 and 2.
+Sizeable discrepancies in the modelling of jet kinematics can be seen between the \textsc{Sherpa} \ttW and \textsc{MadGraph5\_aMC@NLO} generators in the $N_{b-\mathrm{jets}}$=1 regions, while in the $N_{b-\mathrm{jets}}\geq$2 regions the difference is reduced, as illustrated in Figures~\ref{ttV:4j12b} and~\ref{ttV:3j12b} for the high (Regions 1 and 2) and low (Regions 3 and 4) jet multiplicities correspondingly. 
+Differences in distributions of $b$-jet kinematics are following a similar trend - sizeable discrepancies in the $N_{b-\mathrm{jets}}$=1 regions and agreement within scale uncertainties in the $N_{b-\mathrm{jets}}\geq$2 regions, as presented on Figures~\ref{ttV:4jbinfo} for Regions 1 and 2.
 
 
 \begin{figure}[!htb]
@@ -121,7 +122,7 @@ Differences in distributions of $b$-jet kinematics are following a similar trend
 \includegraphics[width=0.45\textwidth]{Plots/ttV/shape/c_Region_1_nJets}\\
 \includegraphics[width=0.45\textwidth]{Plots/ttV/shape/c_Region_0_HT_jets}
 \includegraphics[width=0.45\textwidth]{Plots/ttV/shape/c_Region_1_HT_jets}\\
-  \caption{Distribution of the jet multiplicities (top) and the sum of jets transverse momentum, $HT^{\text{jets}}$ (bottom), for the Region 1 with 1$b$-jet (left) and Region 2 with 2$b$-jets (right) selection requiring four and more jets. Explanation in text. \label{ttV:4j12b}}
+  \caption{Distribution of the jet multiplicities (top) and the sum of jets transverse momentum, $HT^{\text{jets}}$ (bottom), for the Region 1 with $N_{b-\mathrm{jets}}=$1 (left) and Region 2 with  $N_{b-\mathrm{jets}}\geq$2 (right) selection requiring four and more jets.  \label{ttV:4j12b}}
 \end{figure}
 
 
@@ -129,7 +130,7 @@ Differences in distributions of $b$-jet kinematics are following a similar trend
 \centering
 \includegraphics[width=0.45\textwidth]{Plots/ttV/shape/c_Region_2_HT_jets}
 \includegraphics[width=0.45\textwidth]{Plots/ttV/shape/c_Region_3_HT_jets}\\
-  \caption{Distribution of the sum of jets transverse momentum, $HT^{\text{jets}}$, for the Region 3 with 1$b$-jet (left) and Region 4 with 2$b$-jets (right) selection requiring exactly three jets. Explanation in text. \label{ttV:3j12b}}
+  \caption{Distribution of the sum of jets transverse momentum, $HT^{\text{jets}}$, for the Region 3 $N_{b-\mathrm{jets}}$ = 1 (left) and Region 4 with $N_{b-\mathrm{jets}}\geq$2 (right) selection requiring exactly three jets.  \label{ttV:3j12b}}
 \end{figure}
 
 
@@ -139,20 +140,22 @@ Differences in distributions of $b$-jet kinematics are following a similar trend
 \includegraphics[width=0.45\textwidth]{Plots/ttV/shape/c_Region_1_nBtagJets}\\
 \includegraphics[width=0.45\textwidth]{Plots/ttV/shape/c_Region_0_Bjet_Pt_0}
 \includegraphics[width=0.45\textwidth]{Plots/ttV/shape/c_Region_1_Bjet_Pt_0}\\
-  \caption{Distribution of the $b$-jet multiplicities (top) and the leading $b$-jet transverse momentum (bottom), for the Region 1 with 1$b$-jet (left) and Region 2 with 2$b$-jets (right) selection requiring four and more jets. Explanation in text. \label{ttV:4jbinfo}}
+  \caption{Distribution of the $b$-jet multiplicities (top) and the leading $b$-jet transverse momentum (bottom), for the Region 1 with $N_{b-\mathrm{jets}}$=1 (left) and Region 2 with $N_{b-\mathrm{jets}}\geq$2 (right) selection requiring four and more jets.  \label{ttV:4jbinfo}}
 \end{figure}
 
-Good agreement of the single lepton kinematics can be seen between nominal and alternative generators for $\geq2b$-jets selections, as presented in the right of Figures~\ref{ttV:lep_kin} (presented Region 2, while similar behaviour seen in Region 4 as well). 
+Good agreement of the single lepton kinematics can be seen between nominal and alternative generators for the $N_{b-\mathrm{jets}}\geq$2 regions, as shown on the right of Figure~\ref{ttV:lep_kin} representing Region 2. Similar behaviour is also seen in Region 4.
 %While there is an offset of the order of 10\%  between nominal and alternative generators for 1$b$-jet selections, as presented in the left of Figures~\ref{ttV:lep_kin} (Region 1 showed, while similar trend seen in Region 3 as well). 
 
-Sizeable difference in shapes between nominal and alternative generators observed for the distributions corresponding to the correlations between two leptons such as the angular distance between the two leptons, maximum of lepton's pseudorapidity and azimuthal separation between the leptons, as illustrated in Figures~\ref{ttV:ll_kin} for Region 1 on the right and Region 2 on the left (similar trends observed in Regions 3 and 4).
+Sizeable difference in shapes between nominal and alternative generators observed for the distributions corresponding to the correlations between two leptons.
+The distributions of the angular distance between the two leptons, maximum of lepton's pseudorapidity and azimuthal separation between the leptons are presented in Figure~\ref{ttV:ll_kin} for Region 1 on the right and Region 2 on the left. 
+Similar behaviour is also seen in Regions 3 and 4.
 %As was observed for single lepton kinematics, difference in 1$b$-jet selections is increased wrt to $\geq2b$-jets selection.
 %Distributions are presented for $\geq2N_{b-jets},\geq4N_{jets}$ region, while similar behaviour seen in all other regions as well.
 
-Distributions of the jet multiplicity, number of $b$-jets, the leading lepton transverse momentum and the angular distance between the two leptons  $\Delta R _{\ell \ell }$ for the Region 5 with 1$\tau_{had}$ selection are presented on Figure~\ref{ttV:tauR_kin}.
+Distributions of the jet multiplicity, number of $b$-jets, the leading lepton transverse momentum and the angular distance between the two leptons  $\Delta R _{\ell \ell }$ for the Region 5 with $N_{\tau_\mathrm{had}}$ = 1 selection are presented in Figure ~\ref{ttV:tauR_kin}.
 The difference observed between nominal and alternative generators for high jet multiplicities, at the edge of the scale variation uncertainty band. 
-The distribution of $b$-jets agrees for $N_{b-jets}$ equal to two, and has sizeable difference in the 1$b$-jet bin, similarly to 0$\tau_{had}$ selections.
-Lepton kinematic distributions has difference in shapes between nominal and alternative generators.
+The distribution of $N_{b-\mathrm{jets}}$ are in agreement for $N_{b-\mathrm{jets}}$ = 2, while a sizeable difference is observed for $N_{b-\mathrm{jets}} = 1$, which is similar to the $N_{\tau_\mathrm{had}}$ = 0 selections. 
+Lepton kinematic distributions show differences in shapes between the nominal and alternative generator.
 
 \begin{figure}[!htb]
 \centering
@@ -161,7 +164,7 @@ Lepton kinematic distributions has difference in shapes between nominal and alte
 %\includegraphics[width=0.45\textwidth]{Plots/ttV/shape/c_Region_1_lep_Pt_1}
 \includegraphics[width=0.45\textwidth]{Plots/ttV/shape/c_Region_0_min_DRl0j}
 \includegraphics[width=0.45\textwidth]{Plots/ttV/shape/c_Region_1_min_DRl0j}\\
-  \caption{Distribution of the leading lepton transverse momentum (top) and the minimum angular separation between the leading lepton and the nearest jet (bottom), for the Region 1 with 1$b$-jet (left) and Region 2 with 2$b$-jets (right) selection requiring four and more jets. Explanation in text.
+  \caption{Distribution of the leading lepton transverse momentum (top) and the minimum angular separation between the leading lepton and the nearest jet (bottom), for the Region 1 with $N_{b-\mathrm{jets}}$=1(left) and Region 2 with $N_{b-\mathrm{jets}}\geq$2(right) selection requiring four and more jets. 
   \label{ttV:lep_kin}}
 \end{figure}
 
@@ -174,7 +177,7 @@ Lepton kinematic distributions has difference in shapes between nominal and alte
 \includegraphics[width=0.45\textwidth]{Plots/ttV/shape/c_Region_1_maxEta_ll}\\
 \includegraphics[width=0.45\textwidth]{Plots/ttV/shape/c_Region_0_lep_dPhi} 
 \includegraphics[width=0.45\textwidth]{Plots/ttV/shape/c_Region_1_lep_dPhi} 
-  \caption{Distribution of the angular distance between the two leptons (top), maximum between lepton $|\eta_{\ell 0}|$ and $|\eta_{\ell 1}|$ (centre), azimuthal separation between the leptons $\Delta \phi _{\ell \ell }$ (bottom) , for the Region 1 with 1$b$-jet (left) and Region 2 with 2$b$-jets (right) selection requiring four and more jets. Explanation in text.
+  \caption{Distribution of the angular distance between the two leptons (top), maximum between lepton $|\eta_{\ell 0}|$ and $|\eta_{\ell 1}|$ (centre), azimuthal separation between the leptons $\Delta \phi _{\ell \ell }$ (bottom) , for the Region 1 with $N_{b-\mathrm{jets}}$=1 (left) and Region 2 with $N_{b-\mathrm{jets}}\geq$2(right) selection requiring four and more jets. 
    \label{ttV:ll_kin}}
 \end{figure}
 % 
@@ -188,7 +191,7 @@ Lepton kinematic distributions has difference in shapes between nominal and alte
 \includegraphics[width=0.45\textwidth]{Plots/ttV/shape/c_Region_4_nBtagJets}\\
 \includegraphics[width=0.45\textwidth]{Plots/ttV/shape/c_Region_4_lep_Pt_0} 
 \includegraphics[width=0.45\textwidth]{Plots/ttV/shape/c_Region_4_DRll01}\\
-  \caption{Distribution of the the jet multiplicity, number of $b$-jets, the leading lepton transverse momentum and the angular distance between the two leptons  $\Delta R _{\ell \ell }$ for the Region 5 with 1$\tau_{had}$ selection. Explanation in text.
+  \caption{Distribution of the the jet multiplicity, number of $b$-jets, the leading lepton transverse momentum and the angular distance between the two leptons  $\Delta R _{\ell \ell }$ for the Region 5 with 1$\tau_{had}$ selection. 
    \label{ttV:tauR_kin}}
 \end{figure}
 % 
@@ -221,7 +224,7 @@ The same set of distribution which was discussed in Section~\ref{sec:ttw_shape} 
 \includegraphics[width=0.45\textwidth]{Plots/ttV/generator/c_Region_1_nJets}\\
 \includegraphics[width=0.45\textwidth]{Plots/ttV/generator/c_Region_0_HT_jets}
 \includegraphics[width=0.45\textwidth]{Plots/ttV/generator/c_Region_1_HT_jets}\\
-  \caption{Distribution of the jet multiplicities (top) and the sum of jets transverse momentum, $HT^{\text{jets}}$ (bottom), for the Region 1 with 1$b$-jet (left) and Region 2 with 2$b$-jets (right) selection requiring four and more jets. Explanation in text. \label{ttV:den_4j12b}}
+  \caption{Distribution of the jet multiplicities (top) and the sum of jets transverse momentum, $HT^{\text{jets}}$ (bottom), for the Region 1 with $N_{b-\mathrm{jets}}$=1 (left) and Region 2 with $N_{b-\mathrm{jets}}\geq$2 (right) selection requiring four and more jets.  \label{ttV:den_4j12b}}
 \end{figure}
 
 
@@ -229,7 +232,7 @@ The same set of distribution which was discussed in Section~\ref{sec:ttw_shape} 
 \centering
 \includegraphics[width=0.45\textwidth]{Plots/ttV/generator/c_Region_2_HT_jets}
 \includegraphics[width=0.45\textwidth]{Plots/ttV/generator/c_Region_3_HT_jets}\\
-  \caption{Distribution of the sum of jets transverse momentum, $HT^{\text{jets}}$, for the Region 3 with 1$b$-jet (left) and Region 4 with 2$b$-jets (right) selection requiring exactly three jets. Explanation in text. \label{ttV:den_3j12b}}
+  \caption{Distribution of the sum of jets transverse momentum, $HT^{\text{jets}}$, for the Region 3 with $N_{b-\mathrm{jets}}$=1 (left) and Region 4 with $N_{b-\mathrm{jets}}\geq$2 (right) selection requiring exactly three jets.  \label{ttV:den_3j12b}}
 \end{figure}
 
 
@@ -239,7 +242,7 @@ The same set of distribution which was discussed in Section~\ref{sec:ttw_shape} 
 \includegraphics[width=0.45\textwidth]{Plots/ttV/generator/c_Region_1_nBtagJets}\\
 \includegraphics[width=0.45\textwidth]{Plots/ttV/generator/c_Region_0_Bjet_Pt_0}
 \includegraphics[width=0.45\textwidth]{Plots/ttV/generator/c_Region_1_Bjet_Pt_0}\\
-  \caption{Distribution of the $b$-jet multiplicities (top) and the leading $b$-jet transverse momentum (bottom), for the Region 1 with 1$b$-jet (left) and Region 2 with 2$b$-jets (right) selection requiring four and more jets. Explanation in text. \label{ttV:den_4jbinfo}}
+  \caption{Distribution of the $b$-jet multiplicities (top) and the leading $b$-jet transverse momentum (bottom), for the Region 1 with $N_{b-\mathrm{jets}}$=1 (left) and Region 2 with $N_{b-\mathrm{jets}}\geq$2 (right) selection requiring four and more jets.  \label{ttV:den_4jbinfo}}
 \end{figure}
 
 
@@ -251,7 +254,7 @@ The same set of distribution which was discussed in Section~\ref{sec:ttw_shape} 
 %\includegraphics[width=0.45\textwidth]{Plots/ttV/generator/c_Region_1_lep_Pt_1}
 \includegraphics[width=0.45\textwidth]{Plots/ttV/generator/c_Region_0_min_DRl0j}
 \includegraphics[width=0.45\textwidth]{Plots/ttV/generator/c_Region_1_min_DRl0j}\\
-  \caption{Distribution of the leading lepton transverse momentum (top) and the minimum angular separation between the leading lepton and the nearest jet (bottom), for the Region 1 with 1$b$-jet (left) and Region 2 with 2$b$-jets (right) selection requiring four and more jets. Explanation in text.
+  \caption{Distribution of the leading lepton transverse momentum (top) and the minimum angular separation between the leading lepton and the nearest jet (bottom), for the Region 1 with $N_{b-\mathrm{jets}}$=1 (left) and Region 2 with$N_{b-\mathrm{jets}}\geq$2 (right) selection requiring four and more jets. 
   \label{ttV:den_lep_kin}}
 \end{figure}
 
@@ -264,7 +267,7 @@ The same set of distribution which was discussed in Section~\ref{sec:ttw_shape} 
 \includegraphics[width=0.45\textwidth]{Plots/ttV/generator/c_Region_1_maxEta_ll}\\
 \includegraphics[width=0.45\textwidth]{Plots/ttV/generator/c_Region_0_lep_dPhi} 
 \includegraphics[width=0.45\textwidth]{Plots/ttV/generator/c_Region_1_lep_dPhi} 
-  \caption{Distribution of the angular distance between the two leptons (top), maximum between lepton $|\eta_{\ell 0}|$ and $|\eta_{\ell 1}|$ (centre), azimuthal separation between the leptons $\Delta \phi _{\ell \ell }$ (bottom) , for the Region 1 with 1$b$-jet (left) and Region 2 with 2$b$-jets (right) selection requiring four and more jets. Explanation in text.
+  \caption{Distribution of the angular distance between the two leptons (top), maximum between lepton $|\eta_{\ell 0}|$ and $|\eta_{\ell 1}|$ (centre), azimuthal separation between the leptons $\Delta \phi _{\ell \ell }$ (bottom) , for the Region 1 with $N_{b-\mathrm{jets}}$=1 (left) and Region 2 with $N_{b-\mathrm{jets}}\geq$2 (right) selection requiring four and more jets. 
    \label{ttV:den_ll_kin}}
 \end{figure}
 % 
@@ -278,7 +281,7 @@ The same set of distribution which was discussed in Section~\ref{sec:ttw_shape} 
 \includegraphics[width=0.45\textwidth]{Plots/ttV/generator/c_Region_4_nBtagJets}\\
 \includegraphics[width=0.45\textwidth]{Plots/ttV/generator/c_Region_4_lep_Pt_0} 
 \includegraphics[width=0.45\textwidth]{Plots/ttV/generator/c_Region_4_DRll01}\\
-  \caption{Distribution of the the jet multiplicity, number of $b$-jets, the leading lepton transverse momentum and the angular distance between the two leptons  $\Delta R _{\ell \ell }$ for the Region 5 with 1$\tau_{had}$ selection. Explanation in text.
+  \caption{Distribution of the the jet multiplicity, number of $b$-jets, the leading lepton transverse momentum and the angular distance between the two leptons  $\Delta R _{\ell \ell }$ for the Region 5 with 1$\tau_{had}$ selection. 
    \label{ttV:den_tauR_kin}}
 \end{figure}
 % 
