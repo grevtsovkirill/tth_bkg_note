@@ -141,7 +141,9 @@ l155ff: "The distribution of N_{b-\mathrm{jets}} are in agreement for N_{b-\math
 => fixed.
 
 
-Captions of Fig. 10-15: "Further explanation is given in the text." Also, please adopt the  N_{b-\mathrm{jets}} notation here.
+Captions of Fig. 10-15: "Further explanation is given in the text." 
+=> sentence removed.
+Also, please adopt the  N_{b-\mathrm{jets}} notation here.
 => fixed.
 
  You need to define HTjets in the main body somewhere. 
@@ -149,6 +151,7 @@ Captions of Fig. 10-15: "Further explanation is given in the text." Also, please
 
 Caption Fig. 14:  
 eta_l0 and eta_l1 are not defined. 
+=>l0/1 defined in the text.
 "... for Region 1 with  N_{b-\mathrm{jets}} = 1 (left) and Region 2 with N_{b-\mathrm{jets}} >= 2 (right) and requiring four or more jets."
 
 
