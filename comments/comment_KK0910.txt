@@ -67,16 +67,21 @@ l75: change to: "Two analysis regions are considered. The first is defined by th
 l78: Do you mean "scaled to a common arbitraty cross-section times branching fraction times integrated luminosity"? If so, you could just say "scaled to a common arbitraty total yield before any acceptance effects"?
 
 l80: Define the deltaR quantities that are shown.
+=> fixed.
 
 l81: The term "4b selection" is not defined. You could define it on l75, if you want. Dito for the "3b selection" on l84.
 
 l82: The Mbb variables are not defined. 
+=> fixed.
 
 l84: HT is not defined. This is defined in l100. You should harmonize these two chapters. 
+=> fixed.
 
 l85: ME-> matrix element.
+=> fixed.
 
 l86: Comma missing after "Figure 7".
+=> fixed.
 
 l88: eta for which jet? Leading? Also, specify this in the x-axis label of Fig. 9.
 
