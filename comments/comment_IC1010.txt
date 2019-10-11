@@ -18,17 +18,23 @@ Figures 2-9 - A general comment would be to expand the white space around the pl
 Table 3 - Reposition to be inside Section 3
 
 Table 3 - Can you adapt the Sherpa order description to match the ttbar one (ie 0,1@NLO+2,3@LO)
+=> added.
 
 L103 - MEPS@NLO tends to be presented in all capitals (not sure if there is an ATLAS macros, and whether this is it)
 
 L110 - It is not the same PDF set if Table 3 is correct. The precision is different. Please correct.
 
-Fig 10 - 22 - Do not have "Explanation in text". Captions should provide understanding to the figure alone. It would be good to remind what the scale variation is inside the caption. In addition, it is recommended that samples generated at NLO with MG5, carry the aMcAtNlo label and not MG or Madgraph. I would prefer to see the lines labeled as MG5_aMcAtNlo or aMcAtNlo rather than MG.
+Fig 10 - 22 - Do not have "Explanation in text". Captions should provide understanding to the figure alone. It would be good to remind what the scale variation is inside the caption. 
+=> removed.
+In addition, it is recommended that samples generated at NLO with MG5, carry the aMcAtNlo label and not MG or Madgraph. I would prefer to see the lines labeled as MG5_aMcAtNlo or aMcAtNlo rather than MG.
+=> changed to MG5_aMcAtNlo
 
 L129, 131 - Single b-jet regions should say 1 N_(b-jet) not b-jets when written in the form in the note
+=>fixed 
 
 Fig 12 - Missing a figure? Exactly 1 bjet comparison in Region1
+=> no point of showing 1 bin histogram normalised to the integral. 
 
 L173 - Spacing with units fb (\,fb). Also change reference of sample a MG -> aMcAtNlo label change recommended above
-
+=> fixed.
  

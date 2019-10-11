@@ -12,7 +12,7 @@ The choice of renormalisation and factorisation scales is $\mu_R = \mu_F = H_\te
 
 
 Systematic uncertainties due to missing higher-order QCD corrections are estimated by varying the factorisation and renormalisation scales in the nominal sample simultaneously by a factor of 0.5 and 2.0 with respect to the central value. % ($\mu_R=\mu_F=0.5$ and $\mu_R=\mu_F=2.0$ ). 
-Uncertainties associated with the modelling of additional QCD radiation are estimated by comparing the nominal \ttW prediction with that of an alternative sample that was generated at NLO with the \textsc{MadGraph5\_aMC@NLO}~2.2.1 generator using the same scale choice and PDF set as for the nominal sample, and interfaced to \textsc{Pythia}~8.2 in combination with the A14 tune. 
+Uncertainties associated with the modelling of additional QCD radiation are estimated by comparing the nominal \ttW prediction with that of an alternative sample that was generated at NLO with the \textsc{MadGraph5\_aMC@NLO}~2.2.1 (MG5\_aMcAtNlo) generator using the same scale choice and PDF set as for the nominal sample, and interfaced to \textsc{Pythia}~8.2 in combination with the A14 tune. 
 The samples configurations are summarised in Table~\ref{tab:mcconfig}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}
@@ -27,8 +27,8 @@ The configurations used for the event generation of the \ttW processes.}
 Process & Generator & ME order & Parton shower & PDF & Tune  \\
 %& (alternative) & (alternative) & & \\
 \hline
-$\ttbar W$  & \textsc{Sherpa 2.2.1} & \textsc{MePs@Nlo} & \textsc{Sherpa} &  NNPDF3.0 NNLO & \textsc{Sherpa} default \\
-& \textsc{MG5\_aMC} & NLO & \textsc{Pythia} 8 & NNPDF3.0 NLO & A14   \\
+$\ttbar W$  & \textsc{Sherpa 2.2.1} & \textsc{MePs@Nlo} 0,1@NLO+2,3@LO & \textsc{Sherpa} &  NNPDF3.0 NNLO & \textsc{Sherpa} default \\
+& \textsc{MG5\_aMcAtNlo} & NLO & \textsc{Pythia} 8 & NNPDF3.0 NLO & A14   \\
 \hline\hline
 \end{tabular}
 }
@@ -208,7 +208,7 @@ Lepton kinematic distributions show differences in shapes between the nominal an
 \label{sec:ttw_gen}
 
 In the following section comparison of the generators will be given in terms of fiducial cross section: 
-$\sigma_{fid}^{gen}=A_X^{gen}\times \sigma_{tot}^{gen}$ , where $A_X^{gen}$ is the acceptance factor of particular region, $\sigma_{tot}^{gen}$ is the stotal generator cross section (taken directly from generation - i.e. not including any correction factors), with  $\sigma_{tot}^{Sherpa}=652$fb and  $\sigma_{tot}^{MG}=548$fb for Sherpa and MG correspondingly. The fiducial cross sections of the five regions defined in Section~\ref{sec:ttw_fid} are presented on Figure~\ref{ttV:fid_xs}.
+$\sigma_{fid}^{gen}=A_X^{gen}\times \sigma_{tot}^{gen}$ , where $A_X^{gen}$ is the acceptance factor of particular region, $\sigma_{tot}^{gen}$ is the stotal generator cross section (taken directly from generation - i.e. not including any correction factors), with  $\sigma_{tot}^{Sherpa}=652$fb and  $\sigma_{tot}^{MG5\_aMcAtNlo}=548$fb for Sherpa and MG5\_aMcAtNlo correspondingly. The fiducial cross sections of the five regions defined in Section~\ref{sec:ttw_fid} are presented on Figure~\ref{ttV:fid_xs}.
 The same set of distribution which was discussed in Section~\ref{sec:ttw_shape} is presented in terms of fiducial cross section in Figures~\ref{ttV:den_4j12b}-\ref{ttV:den_tauR_kin}.
 
 \begin{figure}[!htb]
