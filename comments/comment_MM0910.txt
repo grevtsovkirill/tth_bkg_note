@@ -1,0 +1,5 @@
+Dear all,
+
+thanks for putting together these studies! For the description of MC samples using multileg setup, please add information on the merging scale. This is very important for MC authors.
+
+Thanks in advance, Maria

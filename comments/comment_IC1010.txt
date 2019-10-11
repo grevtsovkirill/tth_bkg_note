@@ -1,0 +1,34 @@
+Dear all,
+
+Thanks for preparing this note. I have a few comments below.
+
+Thanks, Ian
+
+L56 - Your description of the Sherpa tt+bb samples does not agree with what was presented in the slides in the approval meeting (or with Table 1 which I assume is correct). Can you please check the setup used. You are describing the 2.1.1 sample but the table states the 2.2.1 sample. In addition to the Sherpa version, the PDF is then NNPDF 3.0 NNLO and not CT10. You would also need to check the scale definitions as I do not recall if these were changed in the newer sample.
+
+Table 1 - As stated in the test, the Sherpa tt sample gives NLO precision for 0,1 partons and LO precision for 2,3,4 partons. Can you correct the table for the LO precision as it is not clear whether the +3p refers to being in addition to the +0,1p NLO and could lead to the assumption that it is tt+3p@LO (personally I prefer 0,1@NLO+2,3,4@LO)
+
+L72 (and elsewhere, eg L118) - You should have 
+ between any number and \GeV to get the appropriate spacing. Please check this and also ensure the correct spacing after \GeV. You can use \GeV\ if needed.
+
+L86 - maxPT 
+
+Figures 2-9 - A general comment would be to expand the white space around the plots to provide enough room for labels and legend such there is no overlap. Additionally ratio ranges all need to be adjusted to show all lines (or to highlight points which go beyond the range)
+
+Table 3 - Reposition to be inside Section 3
+
+Table 3 - Can you adapt the Sherpa order description to match the ttbar one (ie 0,1@NLO+2,3@LO)
+
+L103 - MEPS@NLO tends to be presented in all capitals (not sure if there is an ATLAS macros, and whether this is it)
+
+L110 - It is not the same PDF set if Table 3 is correct. The precision is different. Please correct.
+
+Fig 10 - 22 - Do not have "Explanation in text". Captions should provide understanding to the figure alone. It would be good to remind what the scale variation is inside the caption. In addition, it is recommended that samples generated at NLO with MG5, carry the aMcAtNlo label and not MG or Madgraph. I would prefer to see the lines labeled as MG5_aMcAtNlo or aMcAtNlo rather than MG.
+
+L129, 131 - Single b-jet regions should say 1 N_(b-jet) not b-jets when written in the form in the note
+
+Fig 12 - Missing a figure? Exactly 1 bjet comparison in Region1
+
+L173 - Spacing with units fb (\,fb). Also change reference of sample a MG -> aMcAtNlo label change recommended above
+
+ 
