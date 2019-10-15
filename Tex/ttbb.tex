@@ -7,11 +7,11 @@ One sample is generated with the \textsc{POWHEG-BOX v2} NLO event generator~\cit
 The intrinsic uncertainty of the nominal PP8 $\mathrm{t\bar{t}}$ sample is expressed by the simultaneous variation of the renormalisation and factorisation scales ($\mu_R$ and $\mu_F$) together with the corresponding A14 Eigentune variation parameters. The RadiationUp variation has the renormalisation and factorisation scales decreased by a factor of two, the Var3c upward variation of the A14 parameter set and the $h_{damp}$ parameter doubled. The RadiationDown variation has the renormalisation and factorisation scales increased by a factor of two, the Var3c downward variation and the nominal value of $h_{damp}$.
 Additionally, the up and down radiation uncertainty is calculated following the CMS approach, under which the renormalisation scale, factorisation scale and PDF tune variations are each taken individually and their difference to the nominal is summed in quadrature, without changing $h_{damp}$.
 
-The PP8 $\mathrm{t\bar{t}b\bar{b}}$ sample also uses the POWHEG generator where $t\bar{t}+b\bar{b}$ matrix elements are calculated at NLO with massive b-quarks, using the four-flavour NLO NNPDF3.0 PDF set~\cite{Jezo:2018yaf}. The parton shower and hadronisation is modelled by Pythia 8.240. The scales are set to $\mu_R=\sqrt[4]{m_{T,t}\times m_{T,\bar{t}}\times m_{T,b}\times m_{T,\bar{b}} }$, $\mu_F=0.5\times(m_{T,t}+m_{T,\bar{t}}+m_{T,b}+ m_{T,\bar{b}}+m_{T,gluon})$ and $h_{damp}=H_T/2$.
+The PP8 $\mathrm{t\bar{t}b\bar{b}}$ sample also uses the POWHEG generator where $t\bar{t}+b\bar{b}$ matrix elements are calculated at NLO with massive b-quarks, using the four-flavour NNPDF30 NLO as 0118 4FS PDF set~\cite{Jezo:2018yaf}. The parton shower and hadronisation is modelled by Pythia 8.240. The scales are set to $\mu_R=\sqrt[4]{m_{T,t}\times m_{T,\bar{t}}\times m_{T,b}\times m_{T,\bar{b}} }$, $\mu_F=0.5\times(m_{T,t}+m_{T,\bar{t}}+m_{T,b}+ m_{T,\bar{b}}+m_{T,gluon})$ and $h_{damp}=H_T/2$.
 
 For the PP8 samples the bottom and charm quark decays are described by \textsc{EVTGEN} v1.2~\cite{LANGE2001152} and the top quark spin correlations follow ref.~\cite{Frixione:2007zp}.
 
-The \textsc{Sherpa} $\mathrm{t\bar{t}b\bar{b}}$ sample was generated using \textsc{Sherpa}-\textsc{Openloops}~\cite{Cascioli:2013era}. The $t\bar{t}b\bar{b}$ matrix elements were calculated with massive b-quarks at NLO, using the \textsc{COMIX}~\cite{gleisberg2008comix} and \textsc{OPENLOOPS}~\cite{Cascioli:2011va} matrix element generators, and merged with the Sherpa parton shower, tuned by the authors~\cite{schumann2007parton}. The four-flavour NNLO NNPDF3.0 PDF set was used. The scales are set to $\mu_R=\sqrt[4]{m_{T,t}\times m_{T,\bar{t}}\times m_{T,b}\times m_{T,\bar{b}}}$ and $\mu_F=\sqrt{\Sigma(E_T)}$ over all final state particles.
+The \textsc{Sherpa} $\mathrm{t\bar{t}b\bar{b}}$ sample was generated using \textsc{Sherpa}-\textsc{Openloops}~\cite{Cascioli:2013era}. The $t\bar{t}b\bar{b}$ matrix elements were calculated with massive b-quarks at NLO, using the \textsc{COMIX}~\cite{gleisberg2008comix} and \textsc{OPENLOOPS}~\cite{Cascioli:2011va} matrix element generators, and merged with the Sherpa parton shower, tuned by the authors~\cite{schumann2007parton}. The four-flavour NNPDF30 NNLO as 0118 4FS PDF set was used. The scales are set to $\mu_R=\sqrt[4]{m_{T,t}\times m_{T,\bar{t}}\times m_{T,b}\times m_{T,\bar{b}}}$ and $\mu_F=\sqrt{\Sigma(E_T)}$ over all final state particles.
 
 Both the PP8 $\mathrm{t\bar{t}b\bar{b}}$ and the \textsc{Sherpa} $\mathrm{t\bar{t}b\bar{b}}$ samples describe the additional bb-pair with NLO precision in QCD, taking into account the b-quark mass.
 
@@ -31,8 +31,8 @@ Process & Generator & ME order & Parton shower & PDF & Tune  \\
 %& (alternative) & (alternative) & & \\
 \hline
 $\ttbar$  & \textsc{PowHeg v2} & \textsc{NLO} & \textsc{Pythia 8} &  5FS NNPDF3.0 NLO & \textsc{A14}  \\
-$\ttbar+b\bar{b}$  & \textsc{PowHeg v2} & \textsc{NLO} & \textsc{Pythia 8} &  4FS NNPDF3.0 NLO & \textsc{A14}  \\
-$\ttbar+b\bar{b}$  & \textsc{Sherpa 2.2.1} & \textsc{NLO} & \textsc{Sherpa} &  4FS NNPDF3.0 NNLO & \textsc{Sherpa} default  \\
+$\ttbar+b\bar{b}$  & \textsc{PowHeg v2} & \textsc{NLO} & \textsc{Pythia 8} &  4FS NNPDF30 NLO as 0118& \textsc{A14}  \\
+$\ttbar+b\bar{b}$  & \textsc{Sherpa 2.2.1} & \textsc{NLO} & \textsc{Sherpa} &  4FS NNPDF30 NNLO as 0118 & \textsc{Sherpa} default  \\
 $\ttbar$  & \textsc{Sherpa 2.2.1} & tt+0,1\@NLO+2,3,4@LO & \textsc{Sherpa} &  5FS NNPDF3.0 NNLO & \textsc{Sherpa} default  \\
 \hline\hline
 \end{tabular}
