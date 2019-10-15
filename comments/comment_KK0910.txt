@@ -3,10 +3,13 @@ General textual comments:
 
 
 You use the bar for the antiparticles inconsistently throughout the note, please unify. E.g., l24 H->bb without bar.
+=> added bars everywhere
 
 For all figures, please make sure that the lables don't overlap with the histograms. Also, you still have some space to enlarge the legends, which would be helpful for the presentations. Also, the axis labels on the ratio plot (text and numerals) are much smaller compared to the main plot. Please enlarge these appropriately.
+=> improved plots
 
 For the ttbb plots, you always have an x-axis label like "3b DeltaR(b,b)". But the 3b part should not be part of the x-axis, but rather a label in the plot (unify this with what you end up calling it, see my comment to l81). 
+=> fixed
 
 For the ttW plots, the "0" of the y-axis is always truncated. Please fix this (you could, e.g., set the background color of the pad to transparent).
 => fixed. (while not with transparent option - doesn't work for pdfs)
@@ -23,9 +26,10 @@ l35: You use the PP8 acronym before it is defined. Also for MC.
 => fixed.
 
 l40: You need to citations for Phythia and the A14 tune.
+=> fixed
 
 l40f: I don't fully understand this sentence. To what exactly were the muR and muF parameters set? Which if the two top quarks (are they by construction always having the same transverse mass)? Or do you explicitly mean the top quark, as opposed to the anti-top?
-=> specified.
+=> fixed: specified.
 
 l43: parameters (plural s).
 => fixed.
@@ -64,11 +68,13 @@ l75: change to: "Two analysis regions are considered. The first is defined by th
 => fixed.
 
 l78: Do you mean "scaled to a common arbitraty cross-section times branching fraction times integrated luminosity"? If so, you could just say "scaled to a common arbitraty total yield before any acceptance effects"?
+=> fixed: rephrased. Change plots to be normalised to 1.
 
 l80: Define the deltaR quantities that are shown.
 => fixed.
 
 l81: The term "4b selection" is not defined. You could define it on l75, if you want. Dito for the "3b selection" on l84.
+=> fixed: defined above
 
 l82: The Mbb variables are not defined. 
 => fixed.
