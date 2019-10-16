@@ -54,15 +54,34 @@ Leptons are required to have same charge, targeting the semi-leptonic $\mathrm{t
 Events with at least 3 jets and at least one of them being a $b$-jet are considered in the fiducial volume. 
 %Events with at least 3 jets and least one $b$-jet are considered in the fiducial volume. 
 The acceptance for events passing this selection is $A_X^{\geq1b\geq3j}=1.82\times10^{-2}$ for \textsc{Sherpa} and 1.90$\times10^{-2}$ for \textsc{MadGraph5\_aMC@NLO} correspondingly.
-We then split into five regions, categorized by the number of jets of any flavour (three or  $\geq$4), $N_{b-\mathrm{jets}}$ (one or $\geq$2) as well as the presence of hadronically decaying $\tau$ lepton. 
-				\begin{description}
-				\item Region 1: $N_{b-\mathrm{jets}}=$1, $N_{\mathrm{jets}}\geq$4 , 0-$\tau_{had}$
-				\item Region 2: $N_{b-\mathrm{jets}}\geq$2,   $N_{\mathrm{jets}}\geq$4, 0-$\tau_{had}$
-				\item Region 3: $N_{b-\mathrm{jets}}=$1,  $N_{\mathrm{jets}}$=3 , 0-$\tau_{had}$
-				\item Region 4: $N_{b-\mathrm{jets}}\geq$2, $N_{\mathrm{jets}}$=3, 0-$\tau_{had}$
-				\item Region 5: $N_{b-\mathrm{jets}}\geq$1, $N_{\mathrm{jets}}\geq$3 , 1-$\tau_{had}$
-				\end{description}
-The sefinitions of the regions are motivated by the $t\bar{t}H$ Multilepton analysis strategy.
+We then split into five regions, categorized by the number of jets of any flavour (three or  $\geq$4), $N_{b-\mathrm{jets}}$ (one or $\geq$2) as well as the presence of hadronically decaying $\tau$ lepton, as summarised in Table~\ref{tab:ttWregions}.
+
+\begin{table}
+\begin{center}
+\caption{\label{tab:ttWregions}
+The configurations used for the event generation of the \ttW processes.}
+\vspace{0.25cm}
+{\small
+\setlength\tabcolsep{1.5pt}
+\begin{tabular}{l|l}
+\hline\hline
+Region & Selection  \\
+%& (alternative) & (alternative) & & \\
+\hline
+1  & $N_{b-\mathrm{jets}}=$1, $N_{\mathrm{jets}}\geq$4 , 0-$\tau_{had}$ \\
+2 & $N_{b-\mathrm{jets}}\geq$2,   $N_{\mathrm{jets}}\geq$4, 0-$\tau_{had}$ \\
+3 & $N_{b-\mathrm{jets}}=$1,  $N_{\mathrm{jets}}$=3 , 0-$\tau_{had}$ \\
+4 & $N_{b-\mathrm{jets}}\geq$2, $N_{\mathrm{jets}}$=3, 0-$\tau_{had}$ \\
+5 & $N_{b-\mathrm{jets}}\geq$1, $N_{\mathrm{jets}}\geq$3 , 1-$\tau_{had}$\\
+
+\hline
+\hline
+\end{tabular}
+}
+\end{center}
+\end{table}
+
+The definitions of the regions are motivated by the $t\bar{t}H$ Multilepton analysis strategy.
 Regions 1 and 2 corresponds to the signal regions\footnote{slightly different then in ref.~\cite{ATLAS-CONF-2019-045}, in order to define a common selection with the CMS Collaboration.} and Regions 3 and 4 are used as control regions in the 2$\ell$ same-sign  0-$\tau_{had}$ $t\bar{t}H$ channel.
 Definition of Region 5 is closely followed\footnote{requirement on jet multiplicity is relaxed.} by the selections in the 2$\ell$ same-sign 1-$\tau_{had}$ $t\bar{t}H$ channel.
 
@@ -113,7 +132,7 @@ In the following shape agreement between nominal and alternative generators will
 %$N_{b-\mathrm{jets}}=$
 
 Sizeable discrepancies in the modelling of jet kinematics can be seen between the \textsc{Sherpa} \ttW and \textsc{MadGraph5\_aMC@NLO} generators in the $N_{b-\mathrm{jets}}$=1 regions, while in the $N_{b-\mathrm{jets}}\geq$2 regions the difference is reduced, as illustrated in Figures~\ref{ttV:4j12b} and~\ref{ttV:3j12b} for the high (Regions 1 and 2) and low (Regions 3 and 4) jet multiplicities correspondingly. 
-Differences in distributions of $b$-jet kinematics are following a similar trend - sizeable discrepancies in the $N_{b-\mathrm{jets}}$=1 regions and agreement within scale uncertainties in the $N_{b-\mathrm{jets}}\geq$2 regions, as presented on Figures~\ref{ttV:4jbinfo} for Regions 1 and 2.
+Differences in distributions of $b$-jet kinematics follow a similar trend - sizeable discrepancies in the $N_{b-\mathrm{jets}}$=1 regions and agreement within scale uncertainties in the $N_{b-\mathrm{jets}}\geq$2 regions, as presented on Figures~\ref{ttV:4jbinfo} for Regions 1 and 2.
 
 
 \begin{figure}[!htb]
@@ -154,7 +173,7 @@ Similar behaviour is also seen in Regions 3 and 4.
 
 Distributions of the jet multiplicity, number of $b$-jets, the leading lepton transverse momentum and the angular distance between the two leptons  $\Delta R _{\ell 0\ell1 }$ for the Region 5 with $N_{\tau_\mathrm{had}}$ = 1 selection are presented in Figure ~\ref{ttV:tauR_kin}.
 The difference observed between nominal and alternative generators for high jet multiplicities, at the edge of the scale variation uncertainty band. 
-The distribution of $N_{b-\mathrm{jets}}$ are in agreement for $N_{b-\mathrm{jets}}$ = 2, while a sizeable difference is observed for $N_{b-\mathrm{jets}} = 1$, which is similar to the $N_{\tau_\mathrm{had}}$ = 0 selections. 
+The distribution of $N_{b-\mathrm{jets}}$ is in agreement for $N_{b-\mathrm{jets}}$ = 2, while a sizeable difference is observed for $N_{b-\mathrm{jets}} = 1$, which is similar to the $N_{\tau_\mathrm{had}}$ = 0 selections. 
 Lepton kinematic distributions show differences in shapes between the nominal and alternative generator.
 
 \begin{figure}[!htb]
@@ -207,9 +226,8 @@ Lepton kinematic distributions show differences in shapes between the nominal an
 \subsubsection{Generator comparison}
 \label{sec:ttw_gen}
 
-In the following section comparison of the generators will be given in terms of fiducial cross section: 
-$\sigma_{fid}^{gen}=A_X^{gen}\times \sigma_{tot}^{gen}$ , where $A_X^{gen}$ is the acceptance factor of particular region, $\sigma_{tot}^{gen}$ is the stotal generator cross section (taken directly from generation - i.e. not including any correction factors), with  $\sigma_{tot}^{Sherpa}=652$fb and  $\sigma_{tot}^{MG5\_aMcAtNlo}=548$fb for Sherpa and MG5\_aMcAtNlo correspondingly. The fiducial cross sections of the five regions defined in Section~\ref{sec:ttw_fid} are presented on Figure~\ref{ttV:fid_xs}.
-The same set of distribution which was discussed in Section~\ref{sec:ttw_shape} is presented normalised to the fiducial cross section in Figures~\ref{ttV:den_4j12b}-\ref{ttV:den_tauR_kin}.
+In the following section a comparison of the generators will be given in terms of fiducial cross section. Some difference is observed in $\sigma_{fid}^{gen}=A_X^{gen}\times \sigma_{tot}^{gen}$ , where $A_X^{gen}$ is the acceptance factor of particular region, $\sigma_{tot}^{gen}$ is the total generator cross section (taken directly from generation - i.e. not including any correction factors). The cross sections are $\sigma_{tot}^{Sherpa}=652$~fb and $\sigma_{tot}^{MG5\_aMcAtNlo}=548$~fb for Sherpa and MG5\_aMcAtNlo correspondingly. The fiducial cross sections of the five regions defined in Section~\ref{sec:ttw_fid} are presented on Figure~\ref{ttV:fid_xs}.
+The same set of distribution discussed in Section~\ref{sec:ttw_shape} is presented, normalised to the fiducial cross section in Figures~\ref{ttV:den_4j12b}-\ref{ttV:den_tauR_kin}.
 
 \begin{figure}[!htb]
 \centering
@@ -254,7 +272,7 @@ The same set of distribution which was discussed in Section~\ref{sec:ttw_shape} 
 %\includegraphics[width=0.45\textwidth]{Plots/ttV/generator/c_Region_1_lep_Pt_1}
 \includegraphics[width=0.45\textwidth]{Plots/ttV/generator/c_Region_0_min_DRl0j}
 \includegraphics[width=0.45\textwidth]{Plots/ttV/generator/c_Region_1_min_DRl0j}\\
-  \caption{Distribution of the leading lepton transverse momentum (top) and the minimum angular separation between the leading lepton and the nearest jet (bottom), for the Region 1 with $N_{b-\mathrm{jets}}$=1 (left) and Region 2 with$N_{b-\mathrm{jets}}\geq$2 (right) selection requiring four and more jets. 
+  \caption{Distribution of the leading lepton transverse momentum (top) and the minimum angular separation between the leading lepton and the nearest jet (bottom), for the Region 1 with $N_{b-\mathrm{jets}}$=1 (left) and Region 2 with $N_{b-\mathrm{jets}}\geq$2 (right) selection requiring four and more jets. 
   \label{ttV:den_lep_kin}}
 \end{figure}
 
