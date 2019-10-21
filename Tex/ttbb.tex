@@ -1,4 +1,4 @@
-\section{ttbb}
+\section{$t\bar{t}+b\bar{b}$}
 \label{sec:ttbb}
 
 \subsection{Samples}
@@ -7,11 +7,11 @@ One sample is generated with the \textsc{POWHEG-BOX v2} NLO event generator~\cit
 The intrinsic uncertainty of the nominal PP8 $\mathrm{t\bar{t}}$ sample is expressed by the simultaneous variation of the renormalisation and factorisation scales ($\mu_R$ and $\mu_F$) together with the corresponding A14 Eigentune variation parameters. The RadiationUp variation has the renormalisation and factorisation scales decreased by a factor of two, the Var3c upward variation of the A14 parameter set and the $h_{damp}$ parameter doubled. The RadiationDown variation has the renormalisation and factorisation scales increased by a factor of two, the Var3c downward variation and the nominal value of $h_{damp}$.
 Additionally, the up and down radiation uncertainty is calculated following the CMS approach, under which the renormalisation scale, factorisation scale and PDF tune variations are each taken individually and their difference to the nominal is summed in quadrature, without changing $h_{damp}$.
 
-The PP8 $\mathrm{t\bar{t}b\bar{b}}$ sample uses the \textsc{POWHEG-BOX-RES} generator~\cite{jeo2015treatment} and \textsc{OPENLOOPS}~\cite{Cascioli:2011va}, where $t\bar{t}+b\bar{b}$ matrix elements are calculated at NLO with massive b-quarks, using the four-flavour NNPDF30 NLO as 0118 4FS PDF set~\cite{Jezo:2018yaf}. The parton shower and hadronisation is modelled by Pythia 8.240. The b-quark mass is set to 4.95~GeV in \textsc{POWHEG}. The scales are set to $\mu_R=\sqrt[4]{m_{T,t}\times m_{T,\bar{t}}\times m_{T,b}\times m_{T,\bar{b}} }$, $\mu_F=0.5\times(m_{T,t}+m_{T,\bar{t}}+m_{T,b}+ m_{T,\bar{b}}+m_{T,gluon})$ and $h_{damp}=H_T/2$.
+The PP8 $\mathrm{t\bar{t}b\bar{b}}$ sample uses the \textsc{POWHEG-BOX-RES} generator~\cite{jeo2015treatment} and \textsc{OPENLOOPS}~\cite{Cascioli:2011va}, where $t\bar{t}+b\bar{b}$ matrix elements are calculated at NLO with massive b-quarks, using the four-flavour $\textrm{NNPDF30\_nlo\_as\_0118\_nf\_4}$ PDF set~\cite{Jezo:2018yaf}. The parton shower and hadronisation is modelled by Pythia 8.240. The b-quark mass is set to 4.95~GeV in \textsc{POWHEG}. The scales are set to $\mu_R=\sqrt[4]{m_{T,t}\times m_{T,\bar{t}}\times m_{T,b}\times m_{T,\bar{b}} }$, $\mu_F=0.5\times(m_{T,t}+m_{T,\bar{t}}+m_{T,b}+ m_{T,\bar{b}}+m_{T,gluon})$ and $h_{damp}=0.5\times(m_{T,t}+m_{T,\bar{t}}+m_{T,b}+ m_{T,\bar{b}})$.
 
 For the PP8 samples the bottom and charm quark decays are described by \textsc{EVTGEN} v1.2~\cite{LANGE2001152} and the top quark spin correlations follow ref.~\cite{Frixione:2007zp}.
 
-The \textsc{Sherpa} $\mathrm{t\bar{t}b\bar{b}}$ sample was generated using \textsc{Sherpa}-\textsc{Openloops}~\cite{Cascioli:2013era}. The $t\bar{t}b\bar{b}$ matrix elements were calculated with massive b-quarks at NLO, using the \textsc{COMIX}~\cite{gleisberg2008comix} and \textsc{OPENLOOPS}~\cite{Cascioli:2011va} matrix element generators, and merged with the Sherpa parton shower, tuned by the authors~\cite{schumann2007parton}. The four-flavour NNPDF30 NNLO as 0118 4FS PDF set was used. The q-quark mass is set to 4.75~GeV. The scales are set to $\mu_R=\sqrt[4]{m_{T,t}\times m_{T,\bar{t}}\times m_{T,b}\times m_{T,\bar{b}}}$ and $\mu_F=H_T/2$.
+The \textsc{Sherpa} $\mathrm{t\bar{t}b\bar{b}}$ sample was generated using \textsc{Sherpa}-\textsc{Openloops}~\cite{Cascioli:2013era}. The $t\bar{t}b\bar{b}$ matrix elements were calculated with massive b-quarks at NLO, using the \textsc{COMIX}~\cite{gleisberg2008comix} and \textsc{OPENLOOPS}~\cite{Cascioli:2011va} matrix element generators, and merged with the Sherpa parton shower, tuned by the authors~\cite{schumann2007parton}. The four-flavour $\textrm{NNPDF30\_nlo\_as\_0118\_nf\_4}$ PDF set was used. The q-quark mass is set to 4.75~GeV. The scales are set to $\mu_R=\sqrt[4]{m_{T,t}\times m_{T,\bar{t}}\times m_{T,b}\times m_{T,\bar{b}}}$ and $\mu_F=H_T/2$.
 
 Both the PP8 $\mathrm{t\bar{t}b\bar{b}}$ and the \textsc{Sherpa} $\mathrm{t\bar{t}b\bar{b}}$ samples describe the additional bb-pair with NLO precision in QCD, taking into account the b-quark mass.
 
@@ -31,8 +31,8 @@ Process & Generator & ME order & Parton shower & PDF & Tune  \\
 %& (alternative) & (alternative) & & \\
 \hline
 $\ttbar$  & \textsc{PowHeg v2} & \textsc{NLO} & \textsc{Pythia 8} &  5FS NNPDF3.0 NLO & \textsc{A14}  \\
-$\ttbar+b\bar{b}$  & \textsc{Powheg-Box-Res} & \textsc{NLO} & \textsc{Pythia 8} &  4FS NNPDF30 NLO as 0118& \textsc{A14}  \\
-$\ttbar+b\bar{b}$  & \textsc{Sherpa 2.2.1} & \textsc{NLO} & \textsc{Sherpa} &  4FS NNPDF30 NNLO as 0118 & \textsc{Sherpa} default  \\
+$\ttbar+b\bar{b}$  & \textsc{Powheg-Box-Res} & \textsc{NLO} & \textsc{Pythia 8} &  4FS $\textrm{NNPDF30\_nlo\_as\_0118\_nf\_4}$& \textsc{A14}  \\
+$\ttbar+b\bar{b}$  & \textsc{Sherpa 2.2.1} & \textsc{NLO} & \textsc{Sherpa} &  4FS $\textrm{NNPDF30\_nlo\_as\_0118\_nf\_4}$ & \textsc{Sherpa} default  \\
 $\ttbar$  & \textsc{Sherpa 2.2.1} & tt+0,1\@NLO+2,3,4@LO & \textsc{Sherpa} &  5FS NNPDF3.0 NNLO & \textsc{Sherpa} default  \\
 \hline\hline
 \end{tabular}
@@ -41,7 +41,7 @@ $\ttbar$  & \textsc{Sherpa 2.2.1} & tt+0,1\@NLO+2,3,4@LO & \textsc{Sherpa} &  5F
 \end{table}
 
 \subsection{Fiducial Volume}
-Object and event selection is defined at particle-level that closely matches the detector-level described in reference~\cite{HIGG-2017-03} and was defined together with CMS as a common phase space. Jets are reconstructed from stable particles with a mean lifetime of $\tau > 3\times 10^{-11}$~s, using the anti-$k_t$ algorithm with a radius parameter of $R=0.4$, are required to have transverse momentum $p_{T}>25~\GeV$ and pseudorapidity $|\eta|< 2.5$. Jets that are matched to b-hadrons with $p_{T}>5~\GeV$ by ghost matching~\cite{Cacciari:2008gn} and are referred to as b-jets. Electrons and muons, referred to as leptons, are required to satisfy $p_{T}>27~\GeV$ and $|\eta|< 2.5$. 
+Object and event selection is defined at particle-level that closely matches the detector-level described in reference~\cite{HIGG-2017-03} and was defined together with CMS as a common phase space. Jets are reconstructed from stable particles with a mean lifetime of $\tau > 3\times 10^{-11}$~s, using the anti-$k_t$ algorithm with a radius parameter of $R=0.4$, are required to have transverse momentum $p_{T}>25~\GeV$ and pseudorapidity $|\eta|< 2.5$. Jets that are matched to b-hadrons with $p_{T}>5~\GeV$ by ghost matching~\cite{Cacciari:2008gn} are referred to as b-jets. Electrons and muons, referred to as leptons, are required to satisfy $p_{T}>27~\GeV$ and $|\eta|< 2.5$. 
 Leptons are removed if they are separated from a jet by less than $\Delta R=0.4$ ($\Delta R = \sqrt{(\Delta \eta )^2 + (\Delta \phi)^2}$).
 %Selected leptons are required to be separated from selected jets by $\Delta R>0.4$. 
 Events are selected with exactly one lepton and at least 4 jets, equivalent to the semi-leptonic $\mathrm{t\bar{t}}$ decay.
@@ -53,7 +53,7 @@ Two analysis regions are considered. The first is defined by the presence of exa
 \begin{table}[]
 \begin{center}
 \caption{\label{tab:ttbb_varlist}
-The list of the validation variables for the comparison of the generators for $ttbb$ process.}
+The list of validation variables for the comparison of generators for the $t\bar{t}+b\bar{b}$ process.}
 \vspace{0.25cm}
 {\small
 \setlength\tabcolsep{1.5pt}
